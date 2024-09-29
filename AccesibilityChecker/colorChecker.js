@@ -16,7 +16,7 @@ function hexToRGB(hexColor) {
 
 //Función para calcular el componente de luminancia
 
-function luminanceComponent(lum) {
+function luminanceComponent(c) {
   c = c / 255;
   if (c <= 0.03928) {
     return c / 12.92;
@@ -24,3 +24,33 @@ function luminanceComponent(lum) {
     return Math.pow((c + 0.055) / 1.055, 2.4);
   }
 }
+
+//Función para calcular la luminancia relativa del color
+
+function relativeLuminance([r, g, b]) {
+  return (
+    0.2126 * luminanceComponent(r) +
+    0.7152 * luminanceComponent(g) +
+    0.0722 * luminanceComponent(b)
+  );
+}
+
+//Función para calcular la correlación de contraste entre dos colores
+
+function contrastRatio(color1, color2) {
+  let lum1 = relativeLuminance(hexToRGB(color1));
+  let lum2 = relativeLuminance(hexToRGB(color2));
+
+  let L1 = Math.max(lum1, lum2);
+  let L2 = Math.min(lum1, lum2);
+
+  return (L1 + 0.05) / (L2 + 0.05);
+}
+
+//Bloque de cóigo para que se pueda probar el contraste entre dos colores asignados a las variables color1 y color2
+
+let color1 = "#00aaff";
+let color2 = "#FFFFFF";
+let contraste = contrastRatio(color1, color2);
+let contrastFormated = contraste.toFixed(2);
+console.log(contrastFormated);
