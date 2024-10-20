@@ -6,6 +6,7 @@ import Logo from "./Components/Logo";
 import AjustesLogo from "./Components/AjustesLogo";
 import ColorSelect from "./ComponentsMain/ColorSelect";
 
+ 
 
 const Sidebar = () => {
   return (
