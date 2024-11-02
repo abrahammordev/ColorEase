@@ -1,9 +1,10 @@
 // src/Sidebar.jsx
 import React from "react";
-import IconUser from "./IconUser"; // Primer ícono
-import IconFolder from "./IconFolder"; // Segundo ícono
+import IconUser from "./componentes/IconUser"; // Primer ícono
+import IconFolder from "./componentes/IconFolder"; // Segundo ícono
 import Icon3 from "./Icon3"; // Tercer ícono
-import AjustesLogo from "./AjustesLogo";
+import AjustesLogo from "./componentes/AjustesLogo";
+
 
 const Sidebar = () => {
   return (

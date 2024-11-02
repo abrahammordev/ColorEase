@@ -1,11 +1,11 @@
 import React from "react";
 import "./index.css"; 
-import IconUser from "./Components/IconUser"; 
-import IconFolder from "./Components/IconFolder"; 
-import Logo from "./Components/Logo";
-import AjustesLogo from "./Components/AjustesLogo";
+import IconUser from "./components/IconUser"; 
+import IconFolder from "./components/IconFolder"; 
+import Logo from "./components/Logo";
+import AjustesLogo from "./components/AjustesLogo";
 import ColorSelect from "./ComponentsMain/ColorSelect";
-import ThemeButton from "./Components/ThemeButton";
+import ThemeButton from "./components/ThemeButton";
 
  
 
