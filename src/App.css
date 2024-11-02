@@ -75,7 +75,7 @@ body {
 }
 
 .nav-button:active {
-  background-color: #666; /* Cambia el color cuando el botón está activo */
+  background-color: #666; 
 }
 
 /* Contenido principal */

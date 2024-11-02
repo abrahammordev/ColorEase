@@ -1,10 +1,11 @@
 import React from "react";
-import "./index.css"; // Asegúrate de que este sea el camino correcto al archivo CSS
-import IconUser from "./Components/IconUser"; // Asegúrate de que la ruta sea correcta para Icon1
-import IconFolder from "./Components/IconFolder"; // Asegúrate de que la ruta sea correcta para Icon2
+import "./index.css"; 
+import IconUser from "./Components/IconUser"; 
+import IconFolder from "./Components/IconFolder"; 
 import Logo from "./Components/Logo";
 import AjustesLogo from "./Components/AjustesLogo";
 import ColorSelect from "./ComponentsMain/ColorSelect";
+import LightButton from "./Components/ThemeButton";
 
  
 
@@ -16,13 +17,16 @@ const Sidebar = () => {
           <Logo />
         </button>
         <button className="nav-button">
-          <IconUser /> {/* Componente Icon1 */}
+          <IconUser /> 
         </button>
         <button className="nav-button">
-          <IconFolder /> {/* Componente Icon2 */}
+          <IconFolder /> 
         </button>
-        <button className="nav-button">
+        <button className="nav-button-bottom">
           <AjustesLogo />
+        </button>
+        <button className="light-button">
+          <LightButton/>
         </button>
       </nav>
     </aside>
