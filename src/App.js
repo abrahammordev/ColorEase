@@ -5,7 +5,7 @@ import IconFolder from "./Components/IconFolder";
 import Logo from "./Components/Logo";
 import AjustesLogo from "./Components/AjustesLogo";
 import ColorSelect from "./ComponentsMain/ColorSelect";
-import LightButton from "./Components/ThemeButton";
+import ThemeButton from "./Components/ThemeButton";
 
  
 
@@ -25,8 +25,8 @@ const Sidebar = () => {
         <button className="nav-button-bottom">
           <AjustesLogo />
         </button>
-        <button className="light-button">
-          <LightButton/>
+        <button className="theme-button">
+          <ThemeButton/>
         </button>
       </nav>
     </aside>
