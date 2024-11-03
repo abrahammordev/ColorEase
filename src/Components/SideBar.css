@@ -1,0 +1,39 @@
+.sidebar {
+  width: 10%; /* Ajustado a 15% para pantallas grandes */
+  background-color: #313131;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2%;
+  overflow: auto;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.nav-button {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-button:hover {
+  background-color: #797777;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.nav-button:active {
+  background-color: #666; 
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 20%; 
+  }
+}

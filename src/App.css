@@ -1,8 +1,8 @@
-/* Estructura general */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+   font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -14,22 +14,21 @@ body {
 .app-container {
   display: flex;
   height: 100vh;
+  flex-direction: row; 
 }
 
-/* Estilo de la App */
 .App {
-  text-align: center; /* Centra el texto en el contenedor */
+  text-align: center; 
 }
 
 .App-logo {
-  height: 40vmin; /* Altura de la imagen */
-  pointer-events: none; /* Desactiva eventos del mouse sobre el logo */
+  height: 40vmin; 
+  pointer-events: none; 
 }
 
-/* Animación del logo */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear; /* Animación continua */
+    animation: App-logo-spin infinite 20s linear; 
   }
 }
 
@@ -42,43 +41,6 @@ body {
   }
 }
 
-/* Barra lateral */
-.sidebar {
-  width: 10%;
-  background-color: #313131;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 2%;
-  overflow: auto;
-}
-
-.logo {
-  margin-bottom: 20px;
-}
-
-/* Estilo de los botones de navegación */
-.nav-button {
-  width: 100%;
-  background-color: transparent;
-  border: none;
-  color: #fff;
-  padding: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.nav-button:hover {
-  background-color: #797777;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
-
-.nav-button:active {
-  background-color: #666; 
-}
-
-/* Contenido principal */
 .main-content {
   display: flex;
   flex: 1;
@@ -86,7 +48,6 @@ body {
   justify-content: space-between;
 }
 
-/* Sección de entrada de color */
 .color-input-section {
   display: flex;
   flex-direction: column;
@@ -114,18 +75,6 @@ body {
   background-color: #1d8d35;
 }
 
-/* Estilos Responsivos */
-@media (max-width: 768px) {
-  .sidebar {
-    width: 20%; /* Aumenta el ancho en pantallas pequeñas */
-  }
-
-  .app-container {
-    flex-direction: column; /* Cambia a una dirección de columna en pantallas pequeñas */
-  }
-}
-
-/* Estilos de enlace */
 .App-link {
-  color: #61dafb; /* Color de enlace */
+  color: #61dafb; 
 }

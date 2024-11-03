@@ -1,45 +1,23 @@
-import React from "react";
-import "./index.css"; 
-import IconUser from "./components/IconUser"; 
-import IconFolder from "./components/IconFolder"; 
-import Logo from "./components/Logo";
-import AjustesLogo from "./components/AjustesLogo";
-import ColorSelect from "./ComponentsMain/ColorSelect";
-import ThemeButton from "./components/ThemeButton";
-
- 
-
-const Sidebar = () => {
-  return (
-    <aside className="sidebar">
-      <nav className="navigation">
-        <button className="nav-button">
-          <Logo />
-        </button>
-        <button className="nav-button">
-          <IconUser /> 
-        </button>
-        <button className="nav-button">
-          <IconFolder /> 
-        </button>
-        <button className="nav-button-bottom">
-          <AjustesLogo />
-        </button>
-        <button className="theme-button">
-          <ThemeButton/>
-        </button>
-      </nav>
-    </aside>
-  );
-};
+import React, { useState } from "react";
+import "./index.css";
+import SideBar from "./components/SideBar";
+import ColorPicker from "./ComponentsMain/ColorPicker";
+import ColorResult from "./ComponentsMain/ColorResult";
 
 const App = () => {
+  const [color1, setColor1] = useState("#ffffff");
+  const [color2, setColor2] = useState("#000000");
+
   return (
     <div className="app-container">
-      <Sidebar />
-      <main className="main-content">
-        <ColorSelect></ColorSelect>
-      </main>
+      <SideBar />
+      <ColorPicker
+        color1={color1}
+        setColor1={setColor1}
+        color2={color2}
+        setColor2={setColor2}
+      />
+      <ColorResult color1={color1} color2={color2} />{" "}
     </div>
   );
 };

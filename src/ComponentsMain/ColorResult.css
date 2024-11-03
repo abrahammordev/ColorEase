@@ -1,0 +1,71 @@
+/* ColorResult.css */
+
+.color-result-container {
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 8px; 
+  box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.1); 
+  max-width: 400px;
+  max-height: 400px; 
+  margin: 0 auto; 
+}
+
+.color-result-title {
+  color: #333;
+  font-size: 1.5em; 
+  margin-bottom: 20px; 
+}
+
+.color-preview {
+  display: flex;
+  justify-content: space-around; 
+  margin-bottom: 10%; 
+}
+
+.color-box {
+  width: 50px; 
+  height: 50px; 
+  border-radius: 5px; 
+  border: 1px solid #000; 
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  color: #fff; 
+  font-weight: bold; 
+}
+
+.color-result-bar {
+  margin-top: 20%; 
+  width: 100%; 
+  height: 20px;
+  background-color: #f0f0f0; 
+  border-radius: 5px; 
+  overflow: hidden; 
+  border: 2px solid transparent; 
+}
+
+.color-result-progress {
+  height: 100%; 
+  transition: width 0.2s ease; 
+}
+
+.color-error {
+  color: red; 
+}
+
+.color-result-button {
+  margin-top: 20px; 
+  padding: 10px 20px; 
+  background-color: #007bff; 
+  color: #fff; 
+  border: none;
+  border-radius: 4px; 
+  cursor: pointer; 
+  font-size: 1em; 
+  transition: background-color 0.3s ease; 
+}
+
+.color-result-button:hover {
+  background-color: #0056b3; 
+}

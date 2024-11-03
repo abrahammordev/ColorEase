@@ -47,10 +47,14 @@ function contrastRatio(color1, color2) {
   return (L1 + 0.05) / (L2 + 0.05);
 }
 
-//Bloque de cóigo para que se pueda probar el contraste entre dos colores asignados a las variables color1 y color2
 
-let color1 = "#00aaff";
-let color2 = "#FFFFFF";
-let contraste = contrastRatio(color1, color2);
-let contrastFormated = contraste.toFixed(2);
-console.log(contrastFormated);
+// Función a la que se llama para comprobar el contraste
+
+
+function colorChecker(color1 , color2){
+  let contraste = contrastRatio(color1 , color2);
+  let contrastFormated = contraste.toFixed(2);
+  return contrastFormated;
+}
+
+export default colorChecker;
