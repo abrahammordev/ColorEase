@@ -17,7 +17,7 @@ const App = () => {
         color2={color2}
         setColor2={setColor2}
       />
-      <ColorResult color1={color1} color2={color2} />{" "}
+      <ColorResult color1={color1} color2={color2} />
     </div>
   );
 };

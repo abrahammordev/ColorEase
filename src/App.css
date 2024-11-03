@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-   font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -14,21 +14,21 @@ body {
 .app-container {
   display: flex;
   height: 100vh;
-  flex-direction: row; 
+  flex-direction: row;
 }
 
 .App {
-  text-align: center; 
+  text-align: center;
 }
 
 .App-logo {
-  height: 40vmin; 
-  pointer-events: none; 
+  height: 40vmin;
+  pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear; 
+    animation: App-logo-spin infinite 20s linear;
   }
 }
 
@@ -76,5 +76,5 @@ body {
 }
 
 .App-link {
-  color: #61dafb; 
+  color: #61dafb;
 }
