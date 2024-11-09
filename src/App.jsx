@@ -1,4 +1,3 @@
-
 import React from 'react';
 import LeftBar from './components/LeftBar';  
 import styles from'./App.module.css';
