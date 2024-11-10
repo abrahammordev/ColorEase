@@ -37,14 +37,14 @@ function relativeLuminance([r, g, b]) {
 
 //Función para calcular la correlación de contraste entre dos colores y devuelve una puntuacion de 0 a 100
 
-function contrastRatio(color1, color2) {
+export function contrastRatio(color1, color2) {
   let lum1 = relativeLuminance(hexToRGB(color1));
   let lum2 = relativeLuminance(hexToRGB(color2));
 
   let L1 = Math.max(lum1, lum2);
   let L2 = Math.min(lum1, lum2);
 
-  return (((L1 + 0.05) / (L2 + 0.05))/21*100);
+  return (Math.ceil(((L1 + 0.05) / (L2 + 0.05))/21*100));
 }
 
 //Bloque de cóigo para que se pueda probar el contraste entre dos colores asignados a las variables color1 y color2

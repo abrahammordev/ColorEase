@@ -29,10 +29,10 @@ function ColorChoiceWindow({ onColorsUpdate = () => {} }){
             <div className={styles["color-properties"]}>
                 <p>Color 1</p>
                 <ColorChoice id="first" onColorChange={(color) => handleColorChange("first", color)} />
-                <p>Color 2</p>
+                <p className={styles["text-properties"]}>Color 2</p>
                 <ColorChoice id="second" onColorChange={(color) => handleColorChange("second", color)} />
             </div>
-            <p ><button className={styles["color-button"]}></button></p>
+            <p><button className={styles["color-button"]}></button></p>
             
         </div>
     );
