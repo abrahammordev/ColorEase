@@ -45,15 +45,43 @@ function Preview({ firstColor, secondColor }){
             }}/>
                 <div className={styles.radioLabel}>Do you have a favorite color?</div>
                 <div className={styles.radioGroup}>
-                    <label>
-                    <input type="radio" name="favoriteColor" value="yes" /> Yes
+                    <label style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
+                    <input
+                        type="radio"
+                        name="favoriteColor"
+                        value="yes"
+                        style={{
+                        appearance: 'none', // Eliminar estilo por defecto del radio
+                        width: '20px',
+                        height: '20px',
+                        borderRadius: '50%',
+                         // Aquí cambias el fondo del botón
+                        border: `2px solid ${secondColor}`, // Borde del radio
+                        marginRight: '10px',
+                        }}
+                    />
+                    Yes
                     </label>
-                    <label>
-                    <input type="radio" name="favoriteColor" value="no" /> No
+                    <label style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
+                    <input
+                        type="radio"
+                        name="favoriteColor"
+                        value="no"
+                        style={{
+                        appearance: 'none',
+                        width: '20px',
+                        height: '20px',
+                        borderRadius: '50%',
+                        backgroundColor: {secondColor}, // Aquí cambias el fondo del botón
+                        border: `2px solid ${secondColor}`, // Borde del radio
+                        marginRight: '10px',
+                        }}
+                    />
+                    No
                     </label>
                 </div>
-                <div className={styles.buttonContainer}>
-                    <a href="#" className={styles.button}>
+                <div className={styles.buttonContainer} style={{ border: `2px solid ${secondColor}` }}>
+                    <a href="#" className={styles.button} style={{color: `${secondColor}`}}>
                     Click Here
                     </a>
                 </div>
