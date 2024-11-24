@@ -1,28 +1,29 @@
-import ColorChoiceWindow from "./ColorChoiceWindow";
-import styles from "./MainFunctionalities.module.css";
-import PointsWindow from "./PointsWindow";
 import React, { useState } from "react";
+import ColorChoiceWindow from "./ColorChoiceWindow";
+import PointsWindow from "./PointsWindow";
+import styles from "./MainFunctionalities.module.css";
 
-function MainFunctionalities(){
-
+function MainFunctionalities({ onUpdateColors }) {
     const [firstColor, setFirstColor] = useState("#000000");
     const [secondColor, setSecondColor] = useState("#000000");
 
-    //const handleColorsUpdate = (updatedColors) => {
-      //setColors(updatedColors);
-    //};
-
     const handleColorsUpdate = ({ firstColor, secondColor }) => {
-        if (firstColor !== undefined) setFirstColor(firstColor);
-        if (secondColor !== undefined) setSecondColor(secondColor);
-      };
+        if (firstColor !== undefined) {
+            setFirstColor(firstColor);
+            onUpdateColors({ firstColor, secondColor }); // Actualiza colores en App
+        }
+        if (secondColor !== undefined) {
+            setSecondColor(secondColor);
+            onUpdateColors({ firstColor, secondColor }); // Actualiza colores en App
+        }
+    };
 
-    return(
+    return (
         <div className={styles.mainFunctionalities}>
-            <ColorChoiceWindow onColorsUpdate={handleColorsUpdate}/> 
-            <PointsWindow firstColor={firstColor} secondColor={secondColor}/>
+            <ColorChoiceWindow onColorsUpdate={handleColorsUpdate} />
+            <PointsWindow firstColor={firstColor} secondColor={secondColor} />
         </div>
-    )
+    );
 }
 
 export default MainFunctionalities;

@@ -10,7 +10,7 @@ function PointsWindow({ firstColor, secondColor}){
                 
                 
             </div>
-            <p ><button className={styles["color-button"]}></button></p>
+            
         </div>
     );
 }

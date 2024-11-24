@@ -3,8 +3,8 @@ import ColorChoice from "./ColorChoice";
 import styles from "./ColorChoiceWindow.module.css";
 import Points from "./Points";
 import React, { useState } from "react";
-
-
+import buyMeCoffee from "../images/cib--buy-me-a-coffee.png"
+import githubIcon from "../images/mdi--github.png"
 
 function ColorChoiceWindow({ onColorsUpdate = () => {} }){
 
@@ -20,19 +20,24 @@ function ColorChoiceWindow({ onColorsUpdate = () => {} }){
           setSecondColor(colorValue);
           onColorsUpdate({ secondColor: colorValue });
         }
-         // Actualizamos los colores en el padre
+        // Actualizamos los colores en el padre
         
     };
 
     return(
         <div className={styles.ColorChoiceWindow}>
-            <div className={styles["color-properties"]}>
-                <p>Color 1</p>
-                <ColorChoice id="first" onColorChange={(color) => handleColorChange("first", color)} />
-                <p className={styles["text-properties"]}>Color 2</p>
-                <ColorChoice id="second" onColorChange={(color) => handleColorChange("second", color)} />
+            <div>
+                <div className={styles["color-properties"]}>
+                    <p>Color 1</p>
+                    <ColorChoice id="first" onColorChange={(color) => handleColorChange("first", color)} />
+                    <p className={styles["text-properties"]}>Color 2</p>
+                    <ColorChoice id="second" onColorChange={(color) => handleColorChange("second", color)} />
+                </div>
             </div>
-            <p><button className={styles["color-button"]}></button></p>
+            <div className={styles["social-media"]}>
+                <a href=""><img src={buyMeCoffee} width={50} height={50}></img></a>
+                <a href="https://github.com/abrahammordev/ColorEase" target="_blank"><img src={githubIcon} width={50} height={50}></img></a>
+            </div>
             
         </div>
     );

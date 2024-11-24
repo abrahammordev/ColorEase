@@ -22,7 +22,7 @@ function ColorChoice({ id, onColorChange = () => {} }){
     
     return(
         <div className={styles.ColorChoice}>
-            <input type="text" className={styles["text-input"]} placeholder="#Hex" readonly ref={textInputRef}/>
+            <input type="text" className={styles["text-input"]} placeholder="#Hex" readOnly ref={textInputRef}/>
             <input type="color" ref={colorInputRef} className={styles["hidden-color-input"]} onInput={handleChange}/>
             <img src={colorCircle} alt="color-picker-icon" onClick={handleClick} className={styles["color-icon"]}/>
             <input type="hidden" id={textInputRef}/>
