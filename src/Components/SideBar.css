@@ -1,11 +1,11 @@
 .sidebar {
-  width: 10%; /* Ajustado a 15% para pantallas grandes */
+  width: 15vh;
   background-color: #313131;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 2%;
-  overflow: auto;
+  height: 100vh;
 }
 
 .logo {
@@ -26,14 +26,19 @@
   background-color: #797777;
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  z-index: 10;
 }
 
 .nav-button:active {
-  background-color: #666; 
+  background-color: #666;
 }
 
 @media (max-width: 768px) {
   .sidebar {
-    width: 20%; 
+    width: 20%;
+  }
+  .nav-button {
+    padding: 12px;
+    font-size: 14px;
   }
 }
