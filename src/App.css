@@ -7,7 +7,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #b6b6b6;
   color: #333;
   display: flex;
   flex-direction: row;
@@ -16,14 +16,41 @@ body {
 }
 
 .app-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 10vw 1fr; /* Barra lateral + contenido */
+  grid-template-rows: auto 1fr; /* Título + contenido */
+  grid-template-areas:
+    "sidebar title"
+    "sidebar main-content"; /* Layout */
   height: 100vh;
   width: 100vw;
-  flex-direction: row;
+}
+
+.title-component {
+  text-align: center;
+  z-index: 5;
+  font-weight: bold;
+  margin-left: 15vw;
+  margin-top: 2vw;
+}
+
+.color-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas para los componentes de color */
+  margin-top: 12vw;
+  padding: 20px;
+}
+
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+  gap: 20px;
+  padding: 20px;
 }
 
 .nav-component {
-  width: 10vw;  /* Barra de navegación al 10% */
+  width: 10vw;
   background-color: #313131;
   color: white;
   display: flex;
@@ -36,85 +63,22 @@ body {
   z-index: 1000;
 }
 
-.title-component {
+@media (max-width: 768px) {
+  .app-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "sidebar"
+      "title"
+      "main-content"; /* Redefinición para pantallas pequeñas */
+  }
 
-  top: 5%; 
-  width: 100%;
-  height: 20%;
-  text-align: center;
-  font-size: 2rem;
-  color: #333;
-  z-index: 5;
-  font-weight: bold;
-  padding: 10px;
-  margin-left: 10vw;   
-}
+  .color-section {
+    grid-template-columns: 1fr; /* En pantallas pequeñas, los componentes se apilan */
+  }
 
-.color-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 10%;  /* Espacio debajo del título */
-  padding: 20px;
-  flex: 1;
-  margin-left: 10vw;  /* Esto asegura que los demás componentes no se solapen con la barra lateral */
-}
-
-.color-picker,
-.color-result {
-   width: 100%;
-  margin-bottom: 20px;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .content-component,
+  .preview-component {
+    max-width: 100%;
   }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.main-content {
-  display: flex;
-  flex: 1;
-  padding: 20px;
-  justify-content: space-between;
-}
-
-.color-input-section {
-  display: flex;
-  flex-direction: column;
-}
-
-.color-card {
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 10px;
-  margin-bottom: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.accept-button {
-  margin-top: 10px;
-  background-color: #28a745;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.accept-button:hover {
-  background-color: #1d8d35;
-}
-
-.App-link {
-  color: #61dafb;
-}

@@ -1,11 +1,11 @@
 .sidebar {
-  width: 15vh;
+  grid-area: sidebar;
   background-color: #313131;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 2%;
-  height: 100vh;
+  height: 100%; 
 }
 
 .logo {
@@ -33,6 +33,7 @@
   background-color: #666;
 }
 
+/* Responsivo */
 @media (max-width: 768px) {
   .sidebar {
     width: 20%;

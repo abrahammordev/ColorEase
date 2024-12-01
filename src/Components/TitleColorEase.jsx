@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./TitleColorEase.css"
 
 const TitleColorEase = () => {
     return(
