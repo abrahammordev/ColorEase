@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #b6b6b6;
   color: #333;
   display: flex;
@@ -17,68 +17,57 @@ body {
 
 .app-container {
   display: grid;
-  grid-template-columns: 10vw 1fr; /* Barra lateral + contenido */
-  grid-template-rows: auto 1fr; /* Título + contenido */
+  grid-template-columns: 10vw 1fr;
+  grid-template-rows: auto 1fr;
   grid-template-areas:
     "sidebar title"
-    "sidebar main-content"; /* Layout */
+    "sidebar main-content";
   height: 100vh;
   width: 100vw;
 }
 
-.title-component {
-  text-align: center;
-  z-index: 5;
-  font-weight: bold;
-  margin-left: 15vw;
-  margin-top: 2vw;
-}
-
-.color-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Dos columnas para los componentes de color */
-  margin-top: 12vw;
-  padding: 20px;
-}
-
-
-.main-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
-  gap: 20px;
-  padding: 20px;
-}
-
 .nav-component {
-  width: 10vw;
+  grid-area: sidebar;
   background-color: #313131;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
+  height: 100%;
+  padding: 20px;
+  position: relative;
 }
 
-@media (max-width: 768px) {
-  .app-container {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "sidebar"
-      "title"
-      "main-content"; /* Redefinición para pantallas pequeñas */
-  }
-
-  .color-section {
-    grid-template-columns: 1fr; /* En pantallas pequeñas, los componentes se apilan */
-  }
-
-  .content-component,
-  .preview-component {
-    max-width: 100%;
-  }
+.title-component {
+  grid-area: title;
+  font-weight: bold;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 60px;   
 }
 
+.main-content {
+  grid-area: main-content;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.color-section {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  width: 50%;
+  margin-top:5%;
+  margin-left:70px;
+  
+}
+
+.preview-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border-radius: 8px;
+  padding: 10px;
+}

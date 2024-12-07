@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import "./App.css";
-import SideBar from "./components/SideBar";
-import TitleColorEase from "./components/TitleColorEase";
+import SideBar from "./Components/SideBar";
+import TitleColorEase from "./Components/TitleColorEase";
 import ColorPicker from "./ComponentsMain/ColorPicker";
 import ColorResult from "./ComponentsMain/ColorResult";
+import Example from "./ComponentsMain/Example";
 
 const App = () => {
   const [color1, setColor1] = useState("#ffffff");
@@ -11,30 +12,31 @@ const App = () => {
 
   return (
     <div className="app-container">
-      {/* Barra de navegación */}
+      {/* Barra lateral */}
       <div className="nav-component">
-        {/* Barra lateral */}
         <SideBar />
       </div>
-      {/* Título principal de la app */}
+
+      {/* Título principal */}
       <div className="title-component">
         <TitleColorEase />
       </div>
-      <div className="color-section">
-        <div className="content-component">
+
+      {/* Contenido principal */}
+      <div className="main-content">
+        <div className="color-section">
           <ColorPicker
             color1={color1}
             setColor1={setColor1}
             color2={color2}
             setColor2={setColor2}
           />
-        </div>
-        {/* Vista previa de los colores */}
-        <div className="preview-component">
           <ColorResult color1={color1} color2={color2} />
         </div>
+        <div className="preview-component">
+          <Example color1={color1} color2={color2} />
+        </div>
       </div>
-
     </div>
   );
 };

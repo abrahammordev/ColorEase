@@ -1,8 +1,9 @@
 .title-component {
   
-  text-align: center;
+  text-align: left;
   font-size: 2rem;
   color: #333;
   padding: 10px;
-  width: 100%;
+  width: 30%;
+  
 }
