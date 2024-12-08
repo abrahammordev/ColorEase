@@ -1,71 +1,79 @@
 .example-wrapper {
-  border: 2px solid #ccc;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  width: 80%;
+  max-width: 100vw;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.1);
 }
 
 .color-card {
-  width: 100%;
-  max-width: 600px;
+  position: relative;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
 .color-title {
   font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.color-code-title {
+  font-size: 32px;
+  font-weight: bold;
   margin-bottom: 10px;
+  color: inherit;
 }
 
 .color-info-section {
-  width: 100%;
-  text-align: left;
-  margin-top: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(0, 0, 0, 0.1) 10px,
+    rgba(0, 0, 0, 0.1) 20px
+  );
 }
 
-.color-info {
-  font-size: 16px;
-  margin: 5px 0;
-}
-
+.color-info,
 .color-code {
-  background: #f4f4f4;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 5px;
   margin: 5px 0;
-  font-family: monospace;
 }
 
-.example-uses {
-  width: 100%;
-  max-width: 600px;
-}
-
-.example-uses h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.example-uses p {
-  font-size: 16px;
-  margin: 10px 0;
-}
-
-.graph-example {
-  width: 100%;
-  height: 100px;
+.color-quote {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-  color: #fff; /* Color de texto contrastante para mejorar la legibilidad */
-  margin-top: 20px;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 15px;
+  margin-left: 10px;
+  border-left: 5px solid #ccc;
+  color: inherit;
+}
+
+.color-quote img {
+  width: 50px;
+  height: 50px;
+  margin: 10px 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.example-explaining {
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+.example-save {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
 }

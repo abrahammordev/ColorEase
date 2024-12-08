@@ -33,7 +33,7 @@ const ColorPicker = ({ color1, color2, setColor1, setColor2 }) => {
 
   return (
     <div className="color-picker-container">
-      <h2 className="color-picker-title">Selecciona tus colores</h2>
+      <h2 className="color-picker-title"></h2>
       <div className="color-picker-input-group">
         <label htmlFor="color1" className="color-picker-label">
           Color 1:

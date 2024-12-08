@@ -7,8 +7,8 @@ import ColorResult from "./ComponentsMain/ColorResult";
 import Example from "./ComponentsMain/Example";
 
 const App = () => {
-  const [color1, setColor1] = useState("#ffffff");
-  const [color2, setColor2] = useState("#000000");
+  const [color1, setColor1] = useState("#000000");
+  const [color2, setColor2] = useState("#ffffff");
 
   return (
     <div className="app-container">
