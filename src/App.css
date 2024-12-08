@@ -43,7 +43,7 @@ body {
   font-weight: bold;
   margin-left: 15%;
   margin-right: 15%;
-  margin-top: 60px;   
+  margin-top: 60px;
 }
 
 .main-content {
@@ -58,9 +58,8 @@ body {
   flex-direction: row;
   gap: 40px;
   width: 50%;
-  margin-top:5%;
-  margin-left:70px;
-  
+  margin-top: 5%;
+  margin-left: 70px;
 }
 
 .preview-component {
@@ -70,4 +69,62 @@ body {
   width: 50%;
   border-radius: 8px;
   padding: 10px;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  .app-container {
+    grid-template-columns: 1fr; /* Cambia a una sola columna */
+    grid-template-rows: auto auto auto; /* Ajusta las filas */
+    grid-template-areas:
+      "title"
+      "sidebar"
+      "main-content";
+  }
+
+  .nav-component {
+    flex-direction: row; /* Ajusta el sidebar a un diseño horizontal */
+    justify-content: space-around;
+    height: auto;
+    padding: 10px;
+  }
+
+  .title-component {
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .main-content {
+    flex-direction: column; /* Cambia a columna para pantallas pequeñas */
+    padding: 10px;
+  }
+
+  .color-section {
+    flex-direction: column; /* Apila los elementos verticalmente */
+    margin: 0;
+    width: 100%;
+  }
+
+  .preview-component {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-component {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .title-component {
+    font-size: 18px;
+  }
+
+  .main-content {
+    gap: 10px;
+  }
+
+  .preview-component {
+    padding: 5px;
+  }
 }
