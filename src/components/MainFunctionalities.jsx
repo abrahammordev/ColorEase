@@ -5,7 +5,7 @@ import styles from "./MainFunctionalities.module.css";
 
 function MainFunctionalities({ onUpdateColors }) {
     const [firstColor, setFirstColor] = useState("#000000");
-    const [secondColor, setSecondColor] = useState("#000000");
+    const [secondColor, setSecondColor] = useState("#ffffff");
 
     const handleColorsUpdate = ({ firstColor, secondColor }) => {
         if (firstColor !== undefined) {

@@ -5,7 +5,7 @@ import Preview from "./components/Preview";
 import styles from "./App.module.css";
 
 function App() {
-    const [firstColor, setFirstColor] = useState("#000000");
+    const [firstColor, setFirstColor] = useState("#ffffff");
     const [secondColor, setSecondColor] = useState("#000000");
 
     const handleUpdateColors = ({ firstColor, secondColor }) => {
