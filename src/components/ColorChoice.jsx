@@ -1,11 +1,19 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import styles from "./ColorChoice.module.css";
 import colorCircle from "../images/color-circle-icon.png";
 
-function ColorChoice({ id, onColorChange = () => {} }) {
+function ColorChoice({ id, value = "#000000", onColorChange = () => {} }) {
   const colorInputRef = useRef(null);
   const textInputRef = useRef(null);
-  const [textValue, setTextValue] = useState("#");
+  const [textValue, setTextValue] = useState(value);
+
+  // Actualiza el texto si el padre cambia `value`
+  useEffect(() => {
+    setTextValue(value);
+    if (colorInputRef.current) {
+      colorInputRef.current.value = value;
+    }
+  }, [value]);
 
   const handleClick = () => colorInputRef.current.click();
 
