@@ -55,7 +55,7 @@ function ColorChoiceWindow({ onColorsUpdate = () => {} }) {
         </button>
       </div>
       <div className={styles["social-media"]}>
-        <a href="">
+        <a href="https://buymeacoffee.com/colorease">
           <img src={buyMeCoffee} width={50} height={50}></img>
         </a>
         <a href="https://github.com/abrahammordev/ColorEase" target="_blank">
