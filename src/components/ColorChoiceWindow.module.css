@@ -1,32 +1,56 @@
-.ColorChoiceWindow{
-    background-color: #F9F9F9;
-    height: 452px;
-    width: 346px;
-    margin-left: 136px;
-    margin-top: 103px;
-    box-shadow: 0 0 9px rgba(20, 20, 20, 0.3);
-    border-radius: 5%;
+.ColorChoiceWindow {
+  background-color: #f9f9f9;
+  height: 452px;
+  width: 346px;
+  margin-left: 136px;
+  margin-top: 103px;
+  box-shadow: 0 0 9px rgba(20, 20, 20, 0.3);
+  border-radius: 5%;
 }
 
-.color-button{
-    margin-top: 100px;
+.color-button {
+  margin-top: 100px;
 }
 
-
-
-.color-properties{
-    margin-top: 80px;
-    margin-left: 40px;
+.color-properties {
+  margin-top: 80px;
+  margin-left: 40px;
 }
 
-.text-properties{
-    margin-top: 60px;
+.text-properties {
+  margin-top: 60px;
 }
 
-.social-media{
-    margin-top: 50px;
-    display: flex;
-    
-    margin-left: 200px;
+.social-media {
+  margin-top: 5px;
+  display: flex;
+
+  margin-left: 200px;
 }
 
+.random-colors {
+  margin-top: 50px;
+  display: flex;
+  margin-left: 40px;
+}
+
+.random-colors button {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  appearance: none;
+  border-radius: 4px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #000000;
+    outline: 0;
+  }
+}
