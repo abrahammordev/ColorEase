@@ -1,50 +1,50 @@
 .ColorChoiceWindow {
   background-color: #f9f9f9;
-  height: 452px;
-  width: 346px;
-  margin-left: 136px;
-  margin-top: 103px;
-  box-shadow: 0 0 9px rgba(20, 20, 20, 0.3);
+  height: 24vw;
+  width: 19vw;
+  margin-left: 7.08vw;
+  margin-top: 5.37vw;
+  box-shadow: 0 0 0.47vw rgba(20, 20, 20, 0.3);
   border-radius: 5%;
 }
 
 .color-button {
-  margin-top: 100px;
+  margin-top: 5.21vw;
 }
 
 .color-properties {
-  margin-top: 80px;
-  margin-left: 40px;
+  margin-top: 4.16vw;
+  margin-left: 2.08vw;
 }
 
 .text-properties {
-  margin-top: 60px;
+  margin-top: 3.125vw;
 }
 
 .social-media {
-  margin-top: 5px;
+  margin-top: 0.26vw;
   display: flex;
 
-  margin-left: 200px;
+  margin-left: 10.42vw;
 }
 
 .random-colors {
-  margin-top: 50px;
+  margin-top: 2.6vw;
   display: flex;
-  margin-left: 40px;
+  margin-left: 2.08vw;
 }
 
 .random-colors button {
-  padding: 6px 12px;
-  font-size: 14px;
+  padding: 0.3125vw 0.6125vw;
+  font-size: 0.73vw;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 0.05vw solid #ced4da;
   appearance: none;
-  border-radius: 4px;
+  border-radius: 0.21vw;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
   &:focus {
