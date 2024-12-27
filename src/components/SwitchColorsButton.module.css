@@ -6,13 +6,13 @@
 .checkbox {
     appearance: none;
     background-color: #dfe1e4;
-    border-radius: 72px;
+    border-radius: 3.75vw; 
     border: none;
     flex-shrink: 0;
-    height: 20px;
+    height: 1.04vw; 
     margin: 0;
     position: relative;
-    width: 30px;
+    width: 1.56vw; 
     cursor: pointer;
     transition: all 100ms ease-out;
 }
@@ -20,21 +20,21 @@
 .checkbox::before {
     content: "";
     position: absolute;
-    bottom: -6px;
-    left: -6px;
-    right: -6px;
-    top: -6px;
+    bottom: -0.31vw; 
+    left: -0.31vw; 
+    right: -0.31vw; 
+    top: -0.31vw; 
 }
 
 .checkbox::after {
     content: "";
     background-color: #fff;
     border-radius: 50%;
-    height: 14px;
-    left: 3px;
+    height: 0.73vw; 
+    left: 0.16vw; 
     position: absolute;
-    top: 3px;
-    width: 14px;
+    top: 0.16vw;
+    width: 0.73vw; 
     transition: all 200ms ease-out;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .checkbox:checked::after {
-    left: 13px;
+    left: 0.68vw; 
 }
 
 .checkbox:checked:hover {
@@ -56,9 +56,6 @@
 }
 
 .checkboxWrapper{
-    margin-top: 20px;
-    margin-right: 20px;
+    margin-top: 1.04vw; 
+    margin-right: 1.04vw; 
 }
-
-
-
