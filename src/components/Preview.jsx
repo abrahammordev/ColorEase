@@ -1,21 +1,33 @@
 import styles from "./Preview.module.css";
+import React, { useState } from "react";
+import SwitchColorsButton from './SwitchColorsButton';
 
-function Preview({ firstColor, secondColor }){
+function Preview({ firstColor, secondColor }) {
+    const [isChecked, setIsChecked] = useState(false);
+
+    
+    const currentFirstColor = isChecked ? secondColor : firstColor;
+    const currentSecondColor = isChecked ? firstColor : secondColor;
+
+    const handleCheckboxChange = (event) => {
+        setIsChecked(event.target.checked);
+    };
+
     return (
         <div className={styles.Preview}>
-            <div className={styles.previewBox}  style={{
-                backgroundColor: firstColor,
-                color: secondColor,
-                 border: `3px solid ${secondColor}`
+            <div className={styles.previewBox} style={{
+                backgroundColor: currentFirstColor,
+                color: currentSecondColor,
+                border: `3px solid ${currentSecondColor}`
             }}>
-                <h1 className={styles.title}>{firstColor}</h1>
+                <h1 className={styles.title}>{currentFirstColor}</h1>
                 <div className={styles.divider} style={{
-                backgroundColor: secondColor
-            }}></div>
+                    backgroundColor: currentSecondColor
+                }}></div>
                 <div className={styles.code}>
                     <p>.Colors &#123;</p>
-                    <p>&nbsp;&nbsp;color: {secondColor};</p>
-                    <p>&nbsp;&nbsp;background-color: {firstColor};</p>
+                    <p>&nbsp;&nbsp;color: {currentSecondColor};</p>
+                    <p>&nbsp;&nbsp;background-color: {currentFirstColor};</p>
                     <p>&#125;</p>
                 </div>
                 <div className={styles.quote}>
@@ -31,65 +43,60 @@ function Preview({ firstColor, secondColor }){
                 </div>
                 <p>Progress</p>
                 <div className={styles.progress} style={{
-                backgroundColor: secondColor
-            }}>
-                
+                    backgroundColor: currentSecondColor
+                }}>
                 </div>
                 <label htmlFor="inputField" className={styles.label}>
                     Input label
                 </label>
                 <input type="text" id="inputField" placeholder="" className={styles.input} style={{
-                backgroundColor: secondColor,
-                color: firstColor
-
-            }}/>
+                    backgroundColor: currentSecondColor,
+                    color: currentFirstColor
+                }} />
                 <div className={styles.radioLabel}>Do you have a favorite color?</div>
                 <div className={styles.radioGroup}>
                     <label style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
-                    <input
-                        type="radio"
-                        name="favoriteColor"
-                        value="yes"
-                        style={{
-                        appearance: 'none', // Eliminar estilo por defecto del radio
-                        width: '20px',
-                        height: '20px',
-                        borderRadius: '50%',
-                         // Aquí cambias el fondo del botón
-                        border: `2px solid ${secondColor}`, // Borde del radio
-                        marginRight: '10px',
-                        }}
-                    />
-                    Yes
+                        <input
+                            type="radio"
+                            name="favoriteColor"
+                            value="yes"
+                            style={{
+                                appearance: 'none',
+                                width: '20px',
+                                height: '20px',
+                                borderRadius: '50%',
+                                border: `2px solid ${currentSecondColor}`,
+                                marginRight: '10px',
+                            }}
+                        />
+                        Yes
                     </label>
                     <label style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
-                    <input
-                        type="radio"
-                        name="favoriteColor"
-                        value="no"
-                        style={{
-                        appearance: 'none',
-                        width: '20px',
-                        height: '20px',
-                        borderRadius: '50%',
-                        backgroundColor: {secondColor}, // Aquí cambias el fondo del botón
-                        border: `2px solid ${secondColor}`, // Borde del radio
-                        marginRight: '10px',
-                        }}
-                    />
-                    No
+                        <input
+                            type="radio"
+                            name="favoriteColor"
+                            value="no"
+                            style={{
+                                appearance: 'none',
+                                width: '20px',
+                                height: '20px',
+                                borderRadius: '50%',
+                                border: `2px solid ${currentSecondColor}`,
+                                marginRight: '10px',
+                            }}
+                        />
+                        No
                     </label>
                 </div>
-                <div className={styles.buttonContainer} style={{ border: `2px solid ${secondColor}` }}>
-                    <a href="#" className={styles.button} style={{color: `${secondColor}`}}>
-                    Click Here
+                <div className={styles.buttonContainer} style={{ border: `2px solid ${currentSecondColor}` }}>
+                    <a href="#" className={styles.button} style={{ color: `${currentSecondColor}` }}>
+                        Click Here
                     </a>
                 </div>
             </div>
+            <SwitchColorsButton isChecked={isChecked} onCheckboxChange={handleCheckboxChange} className={styles.checkbox}/>
         </div>
-      );
-
-
+    );
 }
 
 export default Preview;
