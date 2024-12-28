@@ -1,13 +1,16 @@
-.LeftBar {
-  background-color: #f3f3f3;
-  width: 5.21vw;
-  border-right: 0.11vw solid #a7a7a7;
+.LeftBar{
+    background-color: #f3f3f3;
+    width: 5.21vw;
+    border-right: 0.11vw solid #a7a7a7;
+    
 }
 
-li {
-  list-style-type: none;
+li{
+    
+    list-style-type: none;
+    
 }
 
-ul {
-  margin: 0vw;
+ul{
+    margin:0vw;
 }
