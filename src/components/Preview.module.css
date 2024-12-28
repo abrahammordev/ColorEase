@@ -28,11 +28,14 @@
     border-radius: 8px;
     font-family: 'Courier New', monospace;
     margin-bottom: 1.04vw; 
+    font-size: 0.8vw;
 }
   
 .quote {
     font-style: italic;
-    margin-bottom: 1.04vw; 
+    margin-bottom: 1.04vw;
+    font-size: 0.8vw;
+
 }
   
 .author {
@@ -47,17 +50,20 @@
 }
   
 .progress {
-    background-color: white;
     height: 0.31vw; 
     border-radius: 3px;
     position: relative;
     margin-bottom: 1.04vw;
+    font-size: 0.73vw; 
+
 }
   
 .label {
     margin-bottom: 0.26vw; 
     font-weight: bold;
+    font-size: 0.73vw; 
     display: block;
+
 }
   
 .input {
@@ -66,20 +72,27 @@
     border: none;
     border-radius: 8px;
     margin-bottom: 0.52vw;
+    font-size: 0.73vw; 
+
 }
   
 .radioLabel {
     margin-bottom: 0.52vw;
+    font-size: 0.73vw; 
+
 }
   
 .radioGroup {
     display: flex;
     gap: 0.52vw; 
     margin-bottom: 1.04vw;
+    font-size: 0.73vw; 
+
 }
   
 .buttonContainer {
     text-align: center;
+    
 }
   
 .button {
@@ -88,7 +101,8 @@
     border-radius: 20px;
     text-decoration: none;
     font-weight: bold;
-    transition: all 0.3s ease;
+    font-size: 0.73vw; 
+
 }
 .previewBox{
     padding: 1.56vw; 

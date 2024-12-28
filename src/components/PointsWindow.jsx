@@ -1,4 +1,3 @@
-import ColorChoice from "./ColorChoice";
 import Points from "./Points";
 import styles from "./PointsWindow.module.css"
 

@@ -1,11 +1,9 @@
-import { useRef } from "react";
 import ColorChoice from "./ColorChoice";
 import styles from "./ColorChoiceWindow.module.css";
-import Points from "./Points";
 import React, { useState } from "react";
-import buyMeCoffee from "../images/cib--buy-me-a-coffee.png";
-import githubIcon from "../images/mdi--github.png";
 import { generateOptimalcombination } from "../optimalColor.js";
+import GitHubIcon from "./icons/GitHubIcon.jsx";
+import BuyMeACoffee from "./icons/BuyMeACoffee.jsx";
 
 function ColorChoiceWindow({ onColorsUpdate = () => {} }) {
   const [firstColor, setFirstColor] = useState("#000000");
@@ -56,10 +54,10 @@ function ColorChoiceWindow({ onColorsUpdate = () => {} }) {
       </div>
       <div className={styles["social-media"]}>
         <a href="https://buymeacoffee.com/colorease">
-          <img src={buyMeCoffee} width={50} height={50}></img>
+          <BuyMeACoffee />
         </a>
         <a href="https://github.com/abrahammordev/ColorEase" target="_blank">
-          <img src={githubIcon} width={50} height={50}></img>
+          <GitHubIcon />
         </a>
       </div>
     </div>
