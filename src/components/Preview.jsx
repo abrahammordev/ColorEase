@@ -40,11 +40,8 @@ function Preview({ firstColor, secondColor }) {
           <div className={styles.author}>Claude Monet</div>
         </div>
         <div className={styles.description}>
-          Color contrast is the difference in brightness between foreground and
-          background colors. For accessibility purposes, aim for a 4.5:1 ratio
-          between the foreground color (e.g. text, links, etc.) and the
-          background color. This ratio ensures people with moderately low vision
-          can tell the colors apart and see your content.
+        Color contrast measures the brightness difference between foreground and background colors.
+        For accessibility, im for a 4.5:1 ratio to ensure readability for people with moderately low vision.
         </div>
         <p className={styles.progress}>Progress</p>
         <div

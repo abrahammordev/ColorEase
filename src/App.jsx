@@ -15,7 +15,7 @@ function App() {
 
     return (
         <div className={styles.appContainer}>
-            <LeftBar />
+            <LeftBar className={styles.leftBar}/>
             <MainView onUpdateColors={handleUpdateColors} />
             <Preview firstColor={firstColor} secondColor={secondColor} />
         </div>

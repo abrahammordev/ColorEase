@@ -8,23 +8,15 @@ import styles from "./LeftBar.module.css";
 function LeftBar(){
     return(
         <div className={styles.LeftBar}>
-            <ul>
-                <li>
-                    <LogoIcon/>
-                </li>
-                <li>
-                    <ProfileIcon/>
-                </li>
-                <li>
-                    <FolderIcon/>
-                </li>
-                <li>
-                    <SettingsIcon/>
-                </li>
-                <li>
-                    <DarkmodeIcon/>
-                </li>
-            </ul>
+            <div className={styles.LogoIcon}>
+                <LogoIcon/>
+            </div>
+            
+            <div className={styles.Icons}>
+                <SettingsIcon/> 
+                <DarkmodeIcon/>
+            </div>
+                
         </div>
     )
 }

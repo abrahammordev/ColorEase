@@ -1,16 +1,50 @@
 .LeftBar{
-    background-color: #f3f3f3;
-    width: 5.21vw;
-    border-right: 0.11vw solid #a7a7a7;
+  position: fixed; /* Fija el div en su posición */
+  top: 0;          /* Se adhiere al borde superior */
+  left: 0;         /* Se adhiere al borde izquierdo */
+  width: 6vw;    /* Ancho fijo */
+  height: 100vw;   /* Altura igual al 100% del viewport */
+  background-color: #f4f4f4; /* Color de fondo opcional */
+  border-right: 0.11vw solid #a7a7a7;
+  
+}
+.Icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    gap: 1.5vw;
+    align-items: center;
+    margin-top: 80vh;
     
 }
-
-li{
-    
-    list-style-type: none;
-    
+.LogoIcon{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    gap: 1.5vw;
+    align-items: center;
 }
 
-ul{
-    margin:0vw;
+@media (max-width: 1200px) and (min-width: 700px) {
+    .LeftBar{
+        position: relative;
+        background-color: #f3f3f3;
+        width: 100%;
+        border-bottom: 0.11vw solid #a7a7a7;
+        display: flex;
+        height: 10vh;
+        align-items: center;
+        
+    }
+
+    .Icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        width: 92%;
+        gap: 3vw;
+               
+    }
+
+    
 }

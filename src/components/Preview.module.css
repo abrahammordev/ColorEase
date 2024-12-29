@@ -1,6 +1,6 @@
 .Preview{
     background-color: #F9F9F9;
-    height: 36.46vw; 
+    height: 40vw; 
     width: 31.25vw; 
     margin-left: 5.21vw; 
     margin-top: 2.08vw; 
@@ -8,7 +8,7 @@
     border-radius: 5%;
     padding: 1.04vw; 
     color: #F9F9F9;
-    height: 44.27vw; 
+    
 }
 .title {
     font-size: 2.60vw; 
@@ -105,10 +105,17 @@
 
 }
 .previewBox{
-    padding: 1.56vw; 
+    padding: 1vw; 
     border-radius: 1.56vw; 
 }
 
 .Preview{
     justify-items: right;
+}
+
+@media (max-width: 1200px) and (min-width: 700px) {
+    .Preview{
+        margin-left: 0;
+        margin-bottom: 2vw;
+    }
 }

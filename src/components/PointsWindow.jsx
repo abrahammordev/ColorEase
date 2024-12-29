@@ -6,10 +6,7 @@ function PointsWindow({ firstColor, secondColor}){
         <div className={styles.PointsWindow}>
             <div className={styles["points-properties"]}>
                 <Points firstColor={firstColor} secondColor={secondColor}/>
-                
-                
             </div>
-            
         </div>
     );
 }
