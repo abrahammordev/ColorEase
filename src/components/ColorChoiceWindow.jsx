@@ -24,7 +24,7 @@ function ColorChoiceWindow({ onColorsUpdate = () => {} }) {
     <div className={styles.ColorChoiceWindow}>
       <div>
         <div className={styles["color-properties"]}>
-          <p>Color 1</p>
+          <p className={styles["text-properties"]}>Color 1</p>
           <ColorChoice
             id="first"
             value={firstColor}

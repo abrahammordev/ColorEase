@@ -20,6 +20,8 @@
 
 .text-properties {
   margin-top: 3.125vw;
+  text-shadow: 0.104vw 0.104vw 0.26vw rgba(0, 0, 0, 0.4);
+  font-size: 1.1vw;
 }
 
 .social-media {
