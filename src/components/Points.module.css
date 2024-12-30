@@ -46,3 +46,16 @@
   border-radius: 3.125vw;
   margin: 2%;
 }
+
+.standard-results {
+  margin-top: 1vw;
+  text-align: center;
+}
+
+.contrast-level {
+  font-size: 1.35vw;
+  color: #333;
+  font-weight: normal;
+  text-shadow: 0.104vw 0.104vw 0.26vw rgba(0, 0, 0, 0.4);
+  font-weight: bold;
+}

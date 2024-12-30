@@ -1,13 +1,26 @@
 import ColorChoice from "./ColorChoice";
 import styles from "./ColorChoiceWindow.module.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { generateOptimalcombination } from "../optimalColor.js";
 import GitHubIcon from "./icons/GitHubIcon.jsx";
 import BuyMeACoffee from "./icons/BuyMeACoffee.jsx";
+import { contrastRatio } from "../colorChecker";
 
-function ColorChoiceWindow({ onColorsUpdate = () => {} }) {
-  const [firstColor, setFirstColor] = useState("#000000");
-  const [secondColor, setSecondColor] = useState("#000000");
+function ColorChoiceWindow({
+  onColorsUpdate = () => {},
+  initialColors = { firstColor: "#ffffff" ,
+  secondColor : "#000000"}
+}) {
+  const [firstColor, setFirstColor] = useState(initialColors.firstColor);
+  const [secondColor, setSecondColor] = useState(initialColors.secondColor);
+  const [contrast, setContrast] = useState(
+    contrastRatio(firstColor, secondColor)
+  );
+
+  useEffect(() => {
+    setContrast(contrastRatio(firstColor, secondColor));
+    onColorsUpdate({ firstColor, secondColor });
+  }, [firstColor, secondColor, onColorsUpdate]);
 
   const handleColorChange = (id, colorValue) => {
     if (id === "first") {
@@ -62,8 +75,6 @@ function ColorChoiceWindow({ onColorsUpdate = () => {} }) {
       </div>
     </div>
   );
-  //color={color2} setColor={setColor2}
-  //<Points color1={color1} color2={color2} /> {/* Pasa los colores a Points */}
 }
 
 export default ColorChoiceWindow;
