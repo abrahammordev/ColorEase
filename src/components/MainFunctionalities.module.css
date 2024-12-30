@@ -1,4 +1,6 @@
 .mainFunctionalities{
     display: flex;
     margin-top:3vw;
+    margin-left: 3vw;
+    gap: 0.5vw;
 }

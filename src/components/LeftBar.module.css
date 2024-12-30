@@ -1,10 +1,10 @@
 .LeftBar{
-  position: fixed; /* Fija el div en su posición */
-  top: 0;          /* Se adhiere al borde superior */
-  left: 0;         /* Se adhiere al borde izquierdo */
-  width: 6vw;    /* Ancho fijo */
-  height: 100vw;   /* Altura igual al 100% del viewport */
-  background-color: #f4f4f4; /* Color de fondo opcional */
+  position: fixed; 
+  top: 0;          
+  left: 0;        
+  width: 6vw;    
+  height: 100vw;   
+  background-color: #f4f4f4; 
   border-right: 0.11vw solid #a7a7a7;
   
 }
