@@ -1,4 +1,4 @@
-import styles from "./Preview.module.css";
+import styles from "./styles.module/Preview.module.css";
 import React, { useState } from "react";
 import SwitchColorsButton from "./SwitchColorsButton";
 

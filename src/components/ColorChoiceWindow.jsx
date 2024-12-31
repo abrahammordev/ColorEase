@@ -1,10 +1,10 @@
 import ColorChoice from "./ColorChoice";
-import styles from "./ColorChoiceWindow.module.css";
+import styles from "./styles.module/ColorChoiceWindow.module.css";
 import React, { useState, useEffect } from "react";
-import { generateOptimalcombination } from "../optimalColor.js";
+import { generateOptimalcombination } from "../scripts/optimalColor.js";
 import GitHubIcon from "./icons/GitHubIcon.jsx";
 import BuyMeACoffee from "./icons/BuyMeACoffee.jsx";
-import { contrastRatio } from "../colorChecker";
+import { contrastRatio } from "../scripts/colorChecker";
 
 function ColorChoiceWindow({
   onColorsUpdate = () => {},

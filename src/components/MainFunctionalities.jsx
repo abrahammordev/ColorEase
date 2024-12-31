@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ColorChoiceWindow from "./ColorChoiceWindow";
 import PointsWindow from "./PointsWindow";
-import styles from "./MainFunctionalities.module.css";
+import styles from "./styles.module/MainFunctionalities.module.css";
 
 function MainFunctionalities({ onUpdateColors }) {
     const [firstColor, setFirstColor] = useState("#000000");

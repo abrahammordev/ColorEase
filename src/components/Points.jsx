@@ -1,5 +1,5 @@
-import styles from "./Points.module.css";
-import { contrastRatio } from "../colorChecker";
+import styles from "./styles.module/Points.module.css";
+import { contrastRatio } from "../scripts/colorChecker";
 
 function Points({ firstColor, secondColor }) {
   const contrast = contrastRatio(firstColor, secondColor);

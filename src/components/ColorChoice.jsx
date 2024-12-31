@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from "react";
-import styles from "./ColorChoice.module.css";
+import styles from "./styles.module/ColorChoice.module.css";
 import colorCircle from "../images/color-circle-icon.png";
 
 function ColorChoice({ id, value = "#000000", onColorChange = () => {} }) {

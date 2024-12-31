@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./MainView.module.css";
+import styles from "./styles.module/MainView.module.css";
 import Title from "./Title";
 import MainFunctionalities from "./MainFunctionalities";
 

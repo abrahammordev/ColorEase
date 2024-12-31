@@ -1,4 +1,4 @@
-import styles from './SwitchColorsButton.module.css';
+import styles from './styles.module/SwitchColorsButton.module.css';
 import React from 'react';
 
 function SwitchColorsButton({ isChecked, onCheckboxChange }) {

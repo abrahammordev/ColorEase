@@ -1,5 +1,5 @@
 import Points from "./Points";
-import styles from "./PointsWindow.module.css"
+import styles from "./styles.module/PointsWindow.module.css"
 
 function PointsWindow({ firstColor, secondColor}){
     return(
