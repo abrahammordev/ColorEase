@@ -129,7 +129,9 @@ function Preview({ firstColor, secondColor }) {
         onCheckboxChange={handleCheckboxChange}
         className={styles.checkbox}
       />
-      <Lens/>
+      <Lens 
+      firstColor={currentFirstColor}
+      secondColor={currentSecondColor}/>
     </div>
   );
 }

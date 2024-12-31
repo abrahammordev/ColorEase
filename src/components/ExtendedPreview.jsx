@@ -123,11 +123,6 @@ function ExtendedPreview({ firstColor, secondColor }) {
           </a>
         </div>
       </div>
-      <SwitchColorsButton
-        isChecked={isChecked}
-        onCheckboxChange={handleCheckboxChange}
-        className={styles.checkbox}
-      />
     </div>
   );
 }

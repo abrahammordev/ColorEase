@@ -1,25 +1,20 @@
-.ExtendedPreview{
-    background-color: #F9F9F9;
-    height: 40vw; 
-    width: 31.25vw; 
-    margin-left: 5.21vw; 
-    margin-top: 2.08vw; 
-    box-shadow: 0 0 9px rgba(20, 20, 20, 0.3);
-    border-radius: 5%;
-    padding: 1.04vw; 
-    color: #F9F9F9;
-    
+p{
+    text-align: justify;
+  
 }
+
 .title {
-    font-size: 2.60vw; 
-    margin-bottom: 0.52vw;
+    font-size: 3.6vw; 
+    margin-bottom: 2vw;
+    margin-top: 3vw;
 }
   
 .divider {
     width: 100%;
     height: 0.10vw; 
     background: white;
-    margin: 0.52vw 0 1.04vw; 
+    margin: 0.52vw 0 1.04vw;
+    margin-bottom: 3vw; 
 }
   
 .code {
@@ -27,26 +22,29 @@
     padding: 0.52vw; 
     border-radius: 8px;
     font-family: 'Courier New', monospace;
-    margin-bottom: 1.04vw; 
-    font-size: 0.8vw;
+    margin-bottom: 4vw; 
+    font-size: 1.5vw;
 }
   
 .quote {
     font-style: italic;
-    margin-bottom: 1.04vw;
-    font-size: 0.8vw;
+    margin-bottom: 3vw;
+    font-size: 1.5vw;
 
 }
   
 .author {
     font-weight: bold;
     margin-top: 0.52vw; 
+    margin-bottom: 5vw;    
 }
   
 .description {
-    font-size: 0.73vw; 
+    font-size: 1.5vw; 
     line-height: 1.6;
-    margin-bottom: 1.04vw; 
+    margin-bottom: 1.04vw;
+    text-align: justify;
+    margin-bottom: 5vw;
 }
   
 .progress {
@@ -54,14 +52,14 @@
     border-radius: 3px;
     position: relative;
     margin-bottom: 1.04vw;
-    font-size: 0.73vw; 
+    font-size: 1.5vw; 
 
 }
   
 .label {
     margin-bottom: 0.26vw; 
     font-weight: bold;
-    font-size: 0.73vw; 
+    font-size: 1.5vw; 
     display: block;
 
 }
@@ -72,13 +70,13 @@
     border: none;
     border-radius: 8px;
     margin-bottom: 0.52vw;
-    font-size: 0.73vw; 
+    font-size: 1.5vw; 
 
 }
   
 .radioLabel {
     margin-bottom: 0.52vw;
-    font-size: 0.73vw; 
+    font-size: 1.5vw; 
 
 }
   
@@ -86,7 +84,7 @@
     display: flex;
     gap: 0.52vw; 
     margin-bottom: 1.04vw;
-    font-size: 0.73vw; 
+    font-size: 1.5vw; 
 
 }
   
@@ -101,12 +99,13 @@
     border-radius: 20px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 0.73vw; 
+    font-size: 1.5vw; 
 
 }
 .previewBox{
     padding: 1vw; 
-    border-radius: 1.56vw; 
+    border-radius: 1.56vw;
+    height: 70vw; 
 }
 
 .Preview{
