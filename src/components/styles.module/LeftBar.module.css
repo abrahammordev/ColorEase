@@ -27,12 +27,12 @@
 
 @media (max-width: 1200px) and (min-width: 700px) {
     .LeftBar{
-        position: relative;
+        
         background-color: #f3f3f3;
         width: 100%;
         border-bottom: 0.11vw solid #a7a7a7;
         display: flex;
-        height: 10vh;
+        height: 5vw;
         align-items: center;
         
     }
@@ -43,7 +43,7 @@
         justify-content: right;
         width: 92%;
         gap: 3vw;
-               
+        margin-top: 0;
     }
 
     
