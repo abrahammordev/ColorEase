@@ -1,9 +1,8 @@
-import styles from "./styles.module/Preview.module.css";
+import styles from "./styles.module/ExtendedPreview.module.css";
 import React, { useState } from "react";
 import SwitchColorsButton from "./SwitchColorsButton";
-import Lens from "./Lens";
 
-function Preview({ firstColor, secondColor }) {
+function ExtendedPreview({ firstColor, secondColor }) {
   const [isChecked, setIsChecked] = useState(false);
 
   const currentFirstColor = isChecked ? secondColor : firstColor;
@@ -14,7 +13,7 @@ function Preview({ firstColor, secondColor }) {
   };
 
   return (
-    <div className={styles.Preview}>
+    <div className={styles.ExtendedPreview}>
       <div
         className={styles.previewBox}
         style={{
@@ -129,9 +128,8 @@ function Preview({ firstColor, secondColor }) {
         onCheckboxChange={handleCheckboxChange}
         className={styles.checkbox}
       />
-      <Lens/>
     </div>
   );
 }
 
-export default Preview;
+export default ExtendedPreview;
