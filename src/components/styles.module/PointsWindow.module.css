@@ -1,9 +1,9 @@
 .PointsWindow {
   background-color: #f9f9f9;
-  height: 23.542vw;
+  height: 24vw;
   width: 18.021vw;
   margin-left: 6.5vw;
-  margin-top: 3.25vw;
+  margin-top: 3.15vw;
   box-shadow: 0 0 0.469vw rgba(20, 20, 20, 0.3);
   border-radius: 5%;
 }
@@ -19,4 +19,21 @@
     border-radius: 5%;
     flex-direction: column;
   }
+}
+
+@media (max-width: 1200px) and (min-width: 700px) {
+  .PointsWindow {
+    background-color: #f9f9f9;
+    height: 40vw;
+    width: 28vw;
+    margin-left: 6.5vw;
+    margin-top: 4.9vw;
+    box-shadow: 0 0 0.469vw rgba(20, 20, 20, 0.3);
+    border-radius: 5%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+  }
+
+
 }

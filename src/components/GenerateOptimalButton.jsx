@@ -1,3 +1,5 @@
+import style from "./styles.module/GenerateOptimalButton.module.css"
+
 function GenerateOptimalButton() {
   return (
     <svg

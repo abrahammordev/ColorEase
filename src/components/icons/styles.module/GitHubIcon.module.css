@@ -11,3 +11,10 @@
     height: 8vw; 
   }
 }
+
+@media (max-width: 1200px) and (min-width: 700px) {
+  .GitHubIcon {
+    width: 4vw; 
+    height: 4vw; 
+  }
+}

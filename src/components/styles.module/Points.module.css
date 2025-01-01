@@ -110,3 +110,25 @@
     text-align: center;
   }
 }
+
+@media (max-width: 1200px) and (min-width: 700px) {
+
+  .points-properties {
+    
+    font-size: 4vw;
+    margin-top: 8vw;
+    
+  }
+
+  .points {
+    font-size: 6vw;
+    margin-left: 6.5vw;
+    
+    
+  }
+
+  .contrast-level {
+    font-size: 1.9vw;
+    
+  }
+}
