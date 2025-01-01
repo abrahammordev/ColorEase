@@ -121,3 +121,10 @@ p{
         margin-bottom: 2vw;
     }
 }
+
+@media (max-width: 700px){
+    .Preview{
+        margin-left: 0;
+        margin-bottom: 2vw;
+    }
+}

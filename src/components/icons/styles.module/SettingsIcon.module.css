@@ -3,3 +3,10 @@
     margin-bottom: 0;
     margin-left: 0vw;
 }   
+
+@media (max-width: 700px) {
+  .SettingsIcon {
+    width: 3vw; 
+    height: 3vw; 
+  }
+}

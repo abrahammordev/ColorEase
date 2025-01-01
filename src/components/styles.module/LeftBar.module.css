@@ -48,3 +48,25 @@
 
     
 }
+
+@media (max-width: 700px){
+    .LeftBar{
+        background-color: #f3f3f3;
+        width: 100%;
+        border-bottom: 0.11vw solid #a7a7a7;
+        display: flex;
+        height: 12vw;
+        align-items: center;
+    }
+    .LogoIcon{
+        margin-left: 5vw;
+    }
+    .Icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        width: 92%;
+        gap: 3vw;
+        margin-top: 0;
+    }
+}   

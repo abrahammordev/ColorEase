@@ -45,17 +45,68 @@
 .progress-bar {
   border-radius: 3.125vw;
   margin: 2%;
+  height: "1.05vw";
 }
 
 .standard-results {
   margin-top: 1vw;
-  text-align: center;
+  text-align: left;
 }
 
 .contrast-level {
   font-size: 1.35vw;
   color: #333;
-  font-weight: normal;
   text-shadow: 0.104vw 0.104vw 0.26vw rgba(0, 0, 0, 0.4);
   font-weight: bold;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .Points {
+    margin-left: 10vw;
+    margin-right: 0;
+    margin-top: 8vw;
+  }
+
+  .points-properties {
+    margin-top: 3.125vw;
+    font-size: 3em;
+    margin-left: 12vw;
+    text-shadow: 0.104vw 0.104vw 0.26vw rgba(0, 0, 0, 0.6);
+  }
+
+  .points {
+    font-size: 4.2em;
+    margin-left: 20vw;
+    text-shadow: 0.104vw 0.104vw 0.26vw rgba(0, 0, 0, 0.6);
+    margin-top: -2.6vw;
+  }
+
+  .progress-bar-cover {
+    box-shadow: 0.104vw 0.104vw 0.26vw rgba(0, 0, 0, 0.6);
+    border-radius: 3.125vw;
+    display: flex;
+    margin-top: -10vw;
+    width: 80vw;
+    align-items: center;
+
+  }
+
+  .progress-bar {
+    border-radius: 3.125vw;
+    margin: 2%;
+  }
+
+  .standard-results {
+    margin-top: 2.5vw;
+    text-align: left;
+  }
+
+  .contrast-level {
+    font-size: 1.3em;
+    color: #333;
+    text-shadow: 0.104vw 0.104vw 0.26vw rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+    text-align: center;
+  }
 }

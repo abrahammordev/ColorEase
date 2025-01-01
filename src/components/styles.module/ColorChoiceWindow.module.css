@@ -3,7 +3,7 @@
   height: 24vw;
   width: 19vw;
   margin-left: 8vw;
-  margin-top: 5.37vw;
+  margin-top: 3.25vw;
   box-shadow: 0 0 0.47vw rgba(20, 20, 20, 0.3);
   border-radius: 5%;
 }
@@ -70,6 +70,75 @@
     box-shadow: 0 0 0.47vw rgba(20, 20, 20, 0.3);
     border-radius: 5%;
   }
+}
 
+@media (max-width: 700px) {
+  .ColorChoiceWindow {
+    background-color: #f9f9f9;
+    height: 80vw;
+    width: 80vw;
+    margin-left: 5vw;
+    margin-top: 20vw;
+    box-shadow: 0 0 0.47vw rgba(20, 20, 20, 0.3);
+    border-radius: 5%;
+    flex-direction: column;
+  }
+  .color-button {
+    margin-top: 10vw;
+    margin-left: 10vw;
+  }
+
+  .color-properties {
+    margin-top: 4vw;
+    margin-left: 2.08vw;
+    font-size: 3vw;
+  }
+
+  .text-properties {
+    margin-top: 4vw;
+    margin-left: 25vw;
+    text-shadow: 0.104vw 0.104vw 0.26vw rgba(0, 0, 0, 0.4);
+    font-size: 2em;
+  }
+
+  .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    margin-left: 45vw;
+  }
+
+  .random-colors {
+    margin-top: 8vw;
+    display: flex;
+    margin-left: 2.08vw;
+  }
+
+  .random-colors button {
+    padding: 0.3125vw 0.6125vw;
+    font-size: 1.3em;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    margin-top: 4vw;
+    margin-left: 4vw;
+    background-clip: padding-box;
+    border: 0.05vw solid #ced4da;
+    appearance: none;
+    border-radius: 2vw;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    &:focus {
+      color: #212529;
+      background-color: #fff;
+      border-color: #000000;
+      outline: 0;
+    }
+  }
+  .social-media {
   
+    margin-left: 65vw;
+  }
 }

@@ -8,3 +8,9 @@
         display: none;
     }
 }
+
+@media (max-width: 700px){
+    .Title{
+        display: none;
+    }
+} 

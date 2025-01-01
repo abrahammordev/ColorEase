@@ -3,3 +3,10 @@
   margin-bottom: 2.86vw;
   margin-left: 0vw;
 }
+
+@media (max-width: 700px) {
+  .BuyMeACoffee {
+    width: 8vw; 
+    height: 8vw; 
+  }
+}

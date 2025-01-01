@@ -1,6 +1,13 @@
-.mainFunctionalities{
-    display: flex;
-    margin-top:3vw;
-    margin-left: 3vw;
-    gap: 0.5vw;
+.mainFunctionalities {
+  display: flex;
+  margin-top: 3vw;
+  margin-left: 3vw;
+  gap: 0.5vw;
+}
+
+@media (max-width: 700px) {
+  .mainFunctionalities {
+    flex-direction: column;
+    
+  }
 }

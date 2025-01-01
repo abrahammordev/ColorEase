@@ -4,6 +4,7 @@ import { contrastRatio } from "../scripts/colorChecker";
 function Points({ firstColor, secondColor }) {
   const contrast = contrastRatio(firstColor, secondColor);
   const percentage = contrast;
+  const isMobile = window.innerWidth <= 700;
 
   // Accesibility levels according to WCAG standards
   const levels = [
@@ -28,7 +29,11 @@ function Points({ firstColor, secondColor }) {
       <p className={styles["points-properties"]}>Points</p>
       <p className={styles["points"]}>{contrast}</p>
       <div
-        style={{ backgroundColor: "#F2F2F2", width: "100%", height: "1.56vw" }}
+        style={{
+          backgroundColor: "#F2F2F2",
+          width: isMobile ? "90%" : "100%",
+          height: isMobile ? "2.2vh" : "1.56vw",
+        }}
         className={styles["progress-bar-cover"]}
       >
         <div
@@ -36,7 +41,7 @@ function Points({ firstColor, secondColor }) {
           style={{
             backgroundColor: "black",
             width: `${percentage}%`,
-            height: "1.05vw",
+            height: isMobile ? "1.7vh" : "1.05vw",
           }}
         ></div>
       </div>

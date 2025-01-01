@@ -38,3 +38,16 @@
   height: 1.05vw;
   pointer-events: none; /* Ignora clics en el input para que no interfiera */
 }
+
+@media (max-width: 700px) {
+  
+  .text-input {
+    font-size: 1.1em;
+    margin-left: 15vw;
+  }
+
+  .color-icon {
+    width: 7vw;
+    height: 7vw;
+  }
+}

@@ -3,9 +3,20 @@
   height: 23.542vw;
   width: 18.021vw;
   margin-left: 6.5vw;
-  margin-top: 5.365vw;
+  margin-top: 3.25vw;
   box-shadow: 0 0 0.469vw rgba(20, 20, 20, 0.3);
   border-radius: 5%;
 }
 
-
+@media (max-width: 700px) {
+  .PointsWindow {
+    background-color: #f9f9f9;
+    height: 80vw;
+    width: 80vw;
+    margin-left: 5vw;
+    margin-top: 20vw;
+    box-shadow: 0 0 0.47vw rgba(20, 20, 20, 0.3);
+    border-radius: 5%;
+    flex-direction: column;
+  }
+}
