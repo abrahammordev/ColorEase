@@ -113,6 +113,12 @@
     justify-items: right;
 }
 
+.icons{
+    margin-right: 0.8vw;
+    
+
+}
+
 @media (max-width: 1200px) and (min-width: 700px) {
     .Preview{
         margin-left: 0;

@@ -5,7 +5,7 @@ p{
 
 .title {
     font-size: 3.6vw; 
-    margin-bottom: 2vw;
+    margin-bottom: 1.5vw;
     margin-top: 3vw;
     text-align: justify;
 }
@@ -15,7 +15,7 @@ p{
     height: 0.10vw; 
     background: white;
     margin: 0.52vw 0 1.04vw;
-    margin-bottom: 3vw; 
+    margin-bottom: 2vw; 
 }
   
 .code {
@@ -23,13 +23,13 @@ p{
     padding: 0.52vw; 
     border-radius: 8px;
     font-family: 'Courier New', monospace;
-    margin-bottom: 4vw; 
+    margin-bottom: 2vw; 
     font-size: 1.5vw;
 }
   
 .quote {
     font-style: italic;
-    margin-bottom: 3vw;
+    margin-bottom: 2vw;
     font-size: 1.5vw;
 
 }
@@ -37,7 +37,8 @@ p{
 .author {
     font-weight: bold;
     margin-top: 0.52vw; 
-    margin-bottom: 5vw;    
+    margin-bottom: 3.5vw; 
+    text-align: justify;   
 }
   
 .description {
@@ -52,7 +53,7 @@ p{
     height: 0.31vw; 
     border-radius: 3px;
     position: relative;
-    margin-bottom: 2vw;
+    margin-bottom: 3vw;
     font-size: 1.5vw; 
 
 }
@@ -71,7 +72,7 @@ p{
     padding: 0.52vw; 
     border: none;
     border-radius: 8px;
-    margin-bottom: 2vw;
+    margin-bottom: 3vw;
     font-size: 1.5vw; 
     text-align: justify;
 
@@ -86,7 +87,7 @@ p{
 .radioGroup {
     display: flex;
     gap: 0.52vw; 
-    margin-bottom: 1.04vw;
+    margin-bottom: 3vw;
     font-size: 1.5vw; 
 
 }

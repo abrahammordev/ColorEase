@@ -124,14 +124,18 @@ function Preview({ firstColor, secondColor }) {
           </a>
         </div>
       </div>
+      <div className={styles["icons"]}>
       <SwitchColorsButton
         isChecked={isChecked}
         onCheckboxChange={handleCheckboxChange}
-        className={styles.checkbox}
       />
+      
       <Lens 
-      firstColor={currentFirstColor}
-      secondColor={currentSecondColor}/>
+        firstColor={currentFirstColor}
+        secondColor={currentSecondColor}
+        className={styles.lensIcon}/>
+      </div>
+        
     </div>
   );
 }
