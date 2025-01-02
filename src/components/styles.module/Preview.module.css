@@ -117,6 +117,45 @@
     .Preview{
         margin-left: 0;
         margin-bottom: 2vw;
+        height: 60vw;
+        width: 40vw;
+    }
+    .title{
+        font-size: 3vw;
+        margin-top: 0.5vw;
+    }
+
+    p{
+        font-size: 1.3vw;;
+    }
+
+    .quote{
+        font-size: 1.3vw;
+    }
+    .description{
+        font-size: 1.3vw;
+        margin-top: 2.5vw;
+    }
+
+    .progress{
+        font-size: 1.3vw;
+        margin-bottom: 2vw;
+    }
+
+    .label{
+        font-size: 1.3vw;
+    }
+
+    .radioLabel{
+        font-size: 1.3vw;
+    }
+
+    .radioGroup{
+        font-size: 1.3vw;
+    }
+
+    .button{
+        font-size: 1.3vw;
     }
 }
 
