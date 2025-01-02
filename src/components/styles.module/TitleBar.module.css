@@ -1,0 +1,19 @@
+.TitleBar{
+    opacity: 0;
+    margin-bottom: -10vw;
+}
+
+@media (max-width: 1200px) and (min-width: 700px) {
+    .TitleBar{
+        opacity: 1;
+        scale: 0.65;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 700px){
+    .TitleBar{
+        display: none;
+        margin-bottom: 0;
+    }
+} 

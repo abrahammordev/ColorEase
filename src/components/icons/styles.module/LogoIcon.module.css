@@ -1,5 +1,5 @@
 .LogoIcon {
-  transform: scale(2.5);
+  width: 5vw;
   margin-top: 1.82vw;
   
   margin-left: 0vw;
@@ -7,7 +7,7 @@
 
 @media (max-width: 1200px) and (min-width: 700px) {
   .LogoIcon {
-    transform: scale(2.7);
+    width: 4vw;
     margin-top: 0;
     margin-left: 4vw;
   }
@@ -15,7 +15,7 @@
 
 @media (max-width: 700px) {
   .LogoIcon {
-    width: 4vw; 
-    height: 4vw; 
+    width: 8vw; 
+    margin-top: 0;
   }
 }

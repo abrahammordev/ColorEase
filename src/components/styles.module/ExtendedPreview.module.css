@@ -45,14 +45,14 @@ p{
     line-height: 1.6;
     margin-bottom: 1.04vw;
     text-align: justify;
-    margin-bottom: 5vw;
+    margin-bottom: 3vw;
 }
   
 .progress {
     height: 0.31vw; 
     border-radius: 3px;
     position: relative;
-    margin-bottom: 1.04vw;
+    margin-bottom: 2vw;
     font-size: 1.5vw; 
 
 }
