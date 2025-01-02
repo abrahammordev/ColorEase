@@ -1,15 +1,19 @@
 import styles from "./styles.module/DarkModeIcon.module.css";
+
+
+function DarkModeIcon() {
+
     
-function DarkmodeIcon(){
     return(
-        <div className={styles.DarkmodeIcon}>
-            <label for="switch" class="switch">
-            <input id="switch" type="checkbox" />
-            <span class="slider"></span>
-            <span class="decoration"></span>
-            </label>
+        <div className={styles.checkboxWrapper}>
+            <input
+                type="checkbox"
+                className={styles.checkbox}
+                
+                
+            />
         </div>
     )
 }
 
-export default DarkmodeIcon;
+export default DarkModeIcon;
