@@ -1,5 +1,5 @@
 .ColorChoiceWindow {
-  background-color: #f9f9f9;
+  background-color: var(--window-color);
   height: 24vw;
   width: 19vw;
   margin-left: 8vw;

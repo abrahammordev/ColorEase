@@ -1,15 +1,15 @@
-.appContainer{
+.appContainer {
     display: flex;
     height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 @media (max-width: 1200px) and (min-width: 700px) {
-    .appContainer{
+    .appContainer {
         display: flex;
         flex-direction: column;
         overflow-x: hidden;
         align-items: center;
     }
-    
 }
-

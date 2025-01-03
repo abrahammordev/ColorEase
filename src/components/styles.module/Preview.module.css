@@ -1,6 +1,6 @@
 .Preview{
-    background-color: #F9F9F9;
-    height: 40vw; 
+    background-color: var(--window-color);
+    height: 41vw; 
     width: 31.25vw; 
     margin-left: 5.21vw; 
     margin-top: 2.08vw; 

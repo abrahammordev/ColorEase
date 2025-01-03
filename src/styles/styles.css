@@ -1,0 +1,38 @@
+/* src/styles/styles.css */
+
+:root {
+  /* Variables generales */
+  --primary-bg-color: #ffffff; /* Fondo del body */
+  --secondary-bg-color: #f3f3f3; /* Fondo de LeftBar y otros */
+  --text-color: #000000; /* Color del texto */
+  --border-color: #a7a7a7;
+  --window-color: #f9f9f9;
+
+  /* Colores personalizados para cada componente */
+  --leftbar-bg-color: #f3f3f3; 
+  --mainview-bg-color: #ffffff;
+  --preview-bg-color: #f3f3f3;
+}
+
+[data-theme="dark"] {
+  /* Variables generales */
+  --primary-bg-color: #1e1b2e; /* Fondo morado oscuro del body */
+  --secondary-bg-color: #2a273d; /* Fondo para LeftBar */
+  --text-color: #ffffff;
+  --border-color: #000000;
+  --window-color: #2a273d;
+  
+  /* Colores personalizados para cada componente */
+  --leftbar-bg-color: #2a273d;
+  --mainview-bg-color: #1e1b2e;
+  --preview-bg-color: #3b3659;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Anonymous Pro', monospace;
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
+  transition: background-color 0.2s, color 0.2s;
+}
