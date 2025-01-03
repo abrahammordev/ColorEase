@@ -87,7 +87,7 @@ p{
 .radioGroup {
     display: flex;
     gap: 0.52vw; 
-    margin-bottom: 3vw;
+    margin-bottom: 1.5vw;
     font-size: 1.5vw; 
 
 }
@@ -120,6 +120,12 @@ p{
     .Preview{
         margin-left: 0;
         margin-bottom: 2vw;
+    }
+    .radioGroup {
+        margin-bottom: 2.8vw;
+    }
+    .input{
+        margin-bottom: 3vw;
     }
 }
 
