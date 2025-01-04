@@ -1,23 +1,25 @@
-import style from "./styles.module/GenerateOptimalButton.module.css"
+import style from "./styles.module/GenerateOptimalButton.module.css";
 
-function GenerateOptimalButton() {
+function GenerateOptimalButton({ onClick }) {
   return (
     <svg
-      width="176"
-      height="47"
+      width="9.16vw"
+      height="2.45vw"
       viewBox="0 0 176 47"
       fill="none"
       tabIndex="0"
       xmlns="http://www.w3.org/2000/svg"
-      aria-label="Generar combinación aleatoria de colores"
+      className={style.GenerateOptimalButton}
+      aria-label="Generate random color combintaion"
       role="button"
       style={{
-        cursor: "pointer", // Hacer que actúe como un botón visualmente
+        cursor: "pointer",
       }}
+      onClick={onClick}
     >
       <path
         d="M8 0.5H168C172.142 0.5 175.5 3.85786 175.5 8V39C175.5 43.1421 172.142 46.5 168 46.5H8C3.85787 46.5 0.5 43.1421 0.5 39V8C0.5 3.85786 3.85786 0.5 8 0.5Z"
-        fill="#2C2C2C"
+        fill="currentColor"
       />
       <path
         d="M8 0.5H168C172.142 0.5 175.5 3.85786 175.5 8V39C175.5 43.1421 172.142 46.5 168 46.5H8C3.85787 46.5 0.5 43.1421 0.5 39V8C0.5 3.85786 3.85786 0.5 8 0.5Z"

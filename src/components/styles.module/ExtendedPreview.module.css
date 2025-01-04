@@ -1,137 +1,239 @@
-p{
-    text-align: justify;
-  
+p {
+  text-align: justify;
 }
 
 .title {
-    font-size: 3.6vw; 
-    margin-bottom: 1.5vw;
-    margin-top: 3vw;
-    text-align: justify;
+  font-size: 3.6vw;
+  margin-bottom: 1.5vw;
+  margin-top: 3vw;
+  text-align: justify;
 }
-  
+
 .divider {
+  width: 100%;
+  height: 0.1vw;
+  background: white;
+  margin: 0.52vw 0 1.04vw;
+  margin-bottom: 2vw;
+}
+
+.code {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.52vw;
+  border-radius: 8px;
+  font-family: "Courier New", monospace;
+  margin-bottom: 2vw;
+  font-size: 1.5vw;
+}
+
+.quote {
+  font-style: italic;
+  margin-bottom: 2vw;
+  font-size: 1.5vw;
+}
+
+.author {
+  font-weight: bold;
+  margin-top: 0.52vw;
+  margin-bottom: 3.5vw;
+  text-align: justify;
+}
+
+.description {
+  font-size: 1.5vw;
+  line-height: 1.6;
+  margin-bottom: 1.04vw;
+  text-align: justify;
+  margin-bottom: 3vw;
+}
+
+.progress {
+  height: 0.31vw;
+  border-radius: 3px;
+  position: relative;
+  margin-bottom: 3vw;
+  font-size: 1.5vw;
+}
+
+.label {
+  margin-bottom: 0.26vw;
+  font-weight: bold;
+  font-size: 1.5vw;
+  display: block;
+  text-align: justify;
+}
+
+.input {
+  width: 97%;
+  padding: 0.52vw;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 3vw;
+  font-size: 1.5vw;
+  text-align: justify;
+}
+
+.radioLabel {
+  margin-bottom: 0.52vw;
+  font-size: 1.5vw;
+  text-align: justify;
+}
+
+.radioGroup {
+  display: flex;
+  gap: 0.52vw;
+  margin-bottom: 1.5vw;
+  font-size: 1.5vw;
+}
+
+.buttonContainer {
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.52vw 1.04vw;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5vw;
+}
+.previewBox {
+  padding: 1vw;
+  border-radius: 1.56vw;
+  height: 70vw;
+}
+
+.Preview {
+  justify-items: right;
+}
+
+@media (max-width: 1200px) and (min-width: 700px) {
+  .Preview {
+    margin-left: 0;
+    margin-bottom: 2vw;
+  }
+  .radioGroup {
+    margin-bottom: 2.8vw;
+  }
+  .input {
+    margin-bottom: 3vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .Preview {
+    margin-left: 0.2;
+    margin-bottom: 3vw;
+  }
+  p {
+    text-align: justify;
+  }
+
+  .title {
+    font-size: 8vw;
+    margin-bottom: 1.5vw;
+    margin-top: 2vw;
+    text-align: justify;
+  }
+
+  .divider {
     width: 100%;
-    height: 0.10vw; 
+    height: 0.1vw;
     background: white;
     margin: 0.52vw 0 1.04vw;
-    margin-bottom: 2vw; 
-}
-  
-.code {
+    margin-bottom: 2vw;
+  }
+
+  .code {
     background-color: rgba(255, 255, 255, 0.1);
-    padding: 0.52vw; 
+    padding: 0.52vw;
     border-radius: 8px;
-    font-family: 'Courier New', monospace;
-    margin-bottom: 2vw; 
-    font-size: 1.5vw;
-}
-  
-.quote {
+    font-family: "Courier New", monospace;
+    margin-bottom: 2vw;
+    font-size: 4vw;
+  }
+
+  .quote {
     font-style: italic;
     margin-bottom: 2vw;
-    font-size: 1.5vw;
+    font-size: 4vw;
+  }
 
-}
-  
-.author {
+  .author {
     font-weight: bold;
-    margin-top: 0.52vw; 
-    margin-bottom: 3.5vw; 
-    text-align: justify;   
-}
-  
-.description {
-    font-size: 1.5vw; 
+    margin-top: 0.52vw;
+    margin-bottom: 3.5vw;
+    text-align: justify;
+  }
+
+  .description {
+    font-size: 3vw;
     line-height: 1.6;
     margin-bottom: 1.04vw;
     text-align: justify;
     margin-bottom: 3vw;
-}
-  
-.progress {
-    height: 0.31vw; 
+  }
+
+  .progress {
+    height: 0.31vw;
     border-radius: 3px;
     position: relative;
-    margin-bottom: 3vw;
-    font-size: 1.5vw; 
+    margin-bottom: 5vw;
+    font-size: 3vw;
+  }
 
-}
-  
-.label {
-    margin-bottom: 0.26vw; 
+  .label {
+    margin-bottom: 0.26vw;
     font-weight: bold;
-    font-size: 1.5vw; 
+    font-size: 3vw;
     display: block;
     text-align: justify;
+  }
 
-}
-  
-.input {
+  .input {
     width: 97%;
-    padding: 0.52vw; 
+    padding: 0.52vw;
     border: none;
     border-radius: 8px;
     margin-bottom: 3vw;
-    font-size: 1.5vw; 
+    font-size: 3vw;
     text-align: justify;
+  }
 
-}
-  
-.radioLabel {
+  .radioLabel {
     margin-bottom: 0.52vw;
-    font-size: 1.5vw; 
+    font-size: 3vw;
     text-align: justify;
-}
-  
-.radioGroup {
-    display: flex;
-    gap: 0.52vw; 
-    margin-bottom: 1.5vw;
-    font-size: 1.5vw; 
+  }
 
-}
-  
-.buttonContainer {
+  .radioGroup {
+    display: flex;
+    gap: 0.52vw;
+    margin-bottom: 1.5vw;
+    font-size: 3vw;
+  }
+
+  .buttonContainer {
     text-align: center;
-    
-}
-  
-.button {
+  }
+
+  .button {
     display: inline-block;
-    padding: 0.52vw 1.04vw; 
+    padding: 0.52vw 1.04vw;
     border-radius: 20px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.5vw; 
+    font-size: 3vw;
 
-}
-.previewBox{
-    padding: 1vw; 
+  }
+  .previewBox {
+    padding: 1vw;
     border-radius: 1.56vw;
-    height: 70vw; 
-}
+    height: 70vw;
+  }
 
-.Preview{
+  .Preview {
     justify-items: right;
-}
-
-@media (max-width: 1200px) and (min-width: 700px) {
-    .Preview{
-        margin-left: 0;
-        margin-bottom: 2vw;
-    }
-    .radioGroup {
-        margin-bottom: 2.8vw;
-    }
-    .input{
-        margin-bottom: 3vw;
-    }
-}
-
-@media (max-width: 700px){
-    .Preview{
-        margin-left: 0;
-        margin-bottom: 2vw;
-    }
+  }
 }

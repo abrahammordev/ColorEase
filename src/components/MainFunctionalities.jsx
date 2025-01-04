@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ColorChoiceWindow from "./ColorChoiceWindow";
 import PointsWindow from "./PointsWindow";
 import styles from "./styles.module/MainFunctionalities.module.css";
+import PreviewMobile from "./PreviewMobile";
 
 function MainFunctionalities({ onUpdateColors }) {
     const [firstColor, setFirstColor] = useState("#000000");
@@ -19,10 +20,11 @@ function MainFunctionalities({ onUpdateColors }) {
     };
 
     return (
-        <div className={styles.mainFunctionalities}>
-            <ColorChoiceWindow onColorsUpdate={handleColorsUpdate} />
-            <PointsWindow firstColor={firstColor} secondColor={secondColor} />
-        </div>
+      <div className={styles.mainFunctionalities}>
+        <ColorChoiceWindow onColorsUpdate={handleColorsUpdate} />
+        <PreviewMobile firstColor={firstColor} secondColor={secondColor} />
+        <PointsWindow firstColor={firstColor} secondColor={secondColor} />
+      </div>
     );
 }
 

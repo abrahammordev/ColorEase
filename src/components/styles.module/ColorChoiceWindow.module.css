@@ -22,47 +22,34 @@
   margin-top: 3.125vw;
   text-shadow: 0.104vw 0.104vw 0.26vw rgba(0, 0, 0, 0.4);
   font-size: 1.1vw;
+  user-select: none;
 }
 
 .social-media {
-  margin-top: 0.26vw;
+  margin-top: -1.3svw;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1vw;
   margin-left: 13vw;
+  color : var(--text-color)
 }
 
 .random-colors {
-  margin-top: 2.6vw;
+  margin-top: 2vw;
   display: flex;
   margin-left: 2.08vw;
+  margin-right: 1vw;
 }
 
 .random-colors button {
-  padding: 0.3125vw 0.6125vw;
   font-size: 0.73vw;
   font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  background-color: #fff;
   background-clip: padding-box;
-  border: 0.05vw solid #ced4da;
-  appearance: none;
-  border-radius: 0.21vw;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-
-  &:focus {
-    color: #212529;
-    background-color: #fff;
-    border-color: #000000;
-    outline: 0;
-  }
 }
 
-  @media (max-width: 1200px) and (min-width: 700px) {
+@media (max-width: 1200px) and (min-width: 700px) {
   .ColorChoiceWindow {
-    
     height: 40vw;
     width: 28vw;
     margin-left: 0;
@@ -70,7 +57,7 @@
     box-shadow: 0 0 0.47vw rgba(20, 20, 20, 0.3);
     border-radius: 5%;
   }
-  .text-properties{
+  .text-properties {
     font-size: 1.5vw;
     margin-top: 5vw;
   }
@@ -78,11 +65,10 @@
 
 @media (max-width: 700px) {
   .ColorChoiceWindow {
-    
     height: 80vw;
     width: 80vw;
     margin-left: 5vw;
-    margin-top: 20vw;
+    margin-top: 15vw;
     box-shadow: 0 0 0.47vw rgba(20, 20, 20, 0.3);
     border-radius: 5%;
     flex-direction: column;
@@ -116,42 +102,21 @@
   .random-colors {
     margin-top: 8vw;
     display: flex;
-    margin-left: 2.08vw;
+    margin-left: 10vw;
   }
 
   .random-colors button {
-    padding: 0.3125vw 0.6125vw;
-    font-size: 1.3em;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    
     margin-top: 4vw;
-    margin-left: 4vw;
-    background-clip: padding-box;
-    border: 0.05vw solid #ced4da;
-    appearance: none;
-    border-radius: 2vw;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-
-    &:focus {
-      color: #212529;
-      background-color: #fff;
-      border-color: #000000;
-      outline: 0;
-    }
+    margin-left: 12vw;
   }
   .social-media {
-  
-    margin-left: 65vw;
+    margin-left: 55vw;
   }
 }
 
-
 @media (max-width: 1200px) and (min-width: 700px) {
-  .random-colors button{
+  .random-colors button {
     font-size: 1.5vw;
     margin-top: 3vw;
-    
   }
 }

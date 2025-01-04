@@ -1,0 +1,10 @@
+.GenerateOptimalButton{
+    user-select: none;
+}
+
+@media (max-width: 700px) {
+  .GenerateOptimalButton {
+    width: 37vw; 
+    height: 10vw; 
+  }
+}

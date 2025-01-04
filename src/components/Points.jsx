@@ -8,9 +8,9 @@ function Points({ firstColor, secondColor }) {
 
   // Accesibility levels according to WCAG standards
   const levels = [
-    { label: "AA (larger text)", threshold: Math.ceil((3 / 21) * 100) },
-    { label: "AA (normal text)", threshold: Math.ceil((4.5 / 21) * 100) },
-    { label: "AAA (normal text)", threshold: Math.ceil((7 / 21) * 100) },
+    { label: "AA (larger text)", threshold: Math.floor((3 / 21) * 100) },
+    { label: "AA (normal text)", threshold: Math.floor((4.5 / 21) * 100) },
+    { label: "AAA (normal text)", threshold: Math.floor((7 / 21) * 100) },
   ];
 
   // Determine the contrast level

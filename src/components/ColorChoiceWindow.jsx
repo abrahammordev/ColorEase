@@ -5,6 +5,7 @@ import { generateOptimalcombination } from "../scripts/optimalColor.js";
 import GitHubIcon from "./icons/GitHubIcon.jsx";
 import BuyMeACoffee from "./icons/BuyMeACoffee.jsx";
 import { contrastRatio } from "../scripts/colorChecker";
+import GenerateOptimalButton from "./GenerateOptimalButton";
 
 function ColorChoiceWindow({
   onColorsUpdate = () => {},
@@ -52,7 +53,7 @@ function ColorChoiceWindow({
         </div>
       </div>
       <div className={styles["random-colors"]}>
-        <button
+        <GenerateOptimalButton
           onClick={() => {
             const [color1, color2] = generateOptimalcombination(); // Llama a la función y desestructura los colores
             setFirstColor(color1); // Actualiza el estado de `firstColor`
@@ -61,12 +62,10 @@ function ColorChoiceWindow({
             // Notifica al componente padre sobre los nuevos colores
             onColorsUpdate({ firstColor: color1, secondColor: color2 });
           }}
-        >
-          Generate optimal
-        </button>
+        />
       </div>
       <div className={styles["social-media"]}>
-        <a href="https://buymeacoffee.com/colorease">
+        <a href="https://buymeacoffee.com/colorease" target="_blank">
           <BuyMeACoffee />
         </a>
         <a href="https://github.com/abrahammordev/ColorEase" target="_blank">

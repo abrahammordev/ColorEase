@@ -1,13 +1,11 @@
-.Lens{
-    all: unset; 
-    cursor: pointer; 
-    
-    align-items: center;
-    justify-content: center;
+.Lens {
+  all: unset;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
 }
 
-.lens-icon{
-    width: 2vw;
-    height: 2vw;
-    
+.lens-icon {
+  width: 2vw;
+  height: 2vw;
 }
