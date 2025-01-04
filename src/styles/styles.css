@@ -10,7 +10,7 @@
   --window-color: #f9f9f9;
 
   /* Colores personalizados para cada componente */
-  --bar-color: #000000; 
+  --bar-color: #000000;
   --cover-bar-color: #f2f2f2;
   --mainview-bg-color: #ffffff;
   --preview-bg-color: #f3f3f3;
@@ -20,11 +20,11 @@
   /* Variables generales */
   --primary-bg-color: #161616; /* Fondo morado oscuro del body */
   --secondary-bg-color: #111111; /* Fondo para LeftBar */
-  --text-color: #B3B6B4; /* Color del texto e iconos */
+  --text-color: #b3b6b4; /* Color del texto e iconos */
   --background-text-color: #454545; /* Color del texto en los inputs */
   --border-color: #272727;
-  --window-color: #2C2C2C;
-  
+  --window-color: #2c2c2c;
+
   /* Colores personalizados para cada componente */
   --bar-color: #b3b6b4;
   --cover-bar-color: #454545;
@@ -32,10 +32,14 @@
   --preview-bg-color: #3b3659;
 }
 
+[data-theme="color-blindness"] {
+}
+[data-theme="dyslexia"] {
+}
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Anonymous Pro', monospace;
+  font-family: "Anonymous Pro", monospace;
   background-color: var(--primary-bg-color);
   color: var(--text-color);
   transition: background-color 0.2s, color 0.2s;

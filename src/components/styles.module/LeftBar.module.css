@@ -34,6 +34,8 @@
           display: flex;
           height: 6vw;
           align-items: center;
+          background-color: var(--secondary-bg-color);
+
       }
   
       .Icons {
@@ -59,6 +61,7 @@
           display: flex;
           height: 12vw;
           align-items: center;
+          background-color: var(--secondary-bg-color);
       }
   
       .LogoIcon {

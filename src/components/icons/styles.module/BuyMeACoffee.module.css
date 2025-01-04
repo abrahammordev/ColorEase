@@ -1,20 +1,22 @@
 .BuyMeACoffee {
-  transform: scale(3.15);
+  transform: scale(1);
   margin-bottom: 2.86vw;
-  margin-left: 0vw;
+  margin-left: -2vw;
+  width: 3.5vw;
+  height: 3.5vw;
 }
 
 @media (max-width: 700px) {
   .BuyMeACoffee {
-    width: 8vw; 
-    height: 8vw; 
+    width: 8vw;
+    height: 8vw;
   }
 }
 
 @media (max-width: 1200px) and (min-width: 700px) {
   .BuyMeACoffee {
-    width: 3vw; 
+    width: 3vw;
     height: 3vw;
-    margin-left: 9vw; 
+    margin-left: 9vw;
   }
 }
