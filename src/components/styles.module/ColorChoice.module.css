@@ -3,8 +3,9 @@
   font-size: 0.9vw;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
-  background-color: #fff;
+  color: var(--text-color);
+  background-color: var(--background-text-color);
+  
   background-clip: padding-box;
   border: 0.05vw solid #ced4da;
   appearance: none;

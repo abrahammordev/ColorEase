@@ -16,19 +16,6 @@
   margin-top: -1.563vw;
 }
 
-/*.progress-bar-cover{
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-    border-radius: 60px;
-
-    
-}
-
-.progress-bar{
-    border-radius: 60px;
-    margin-top: -30px;
-    margin-left: 5px;
-    
-}*/
 .Points {
   margin-left: 1.563vw;
   margin-right: 1.563vw;
@@ -55,7 +42,7 @@
 
 .contrast-level {
   font-size: 1.35vw;
-  color: #333;
+  color: var(--text-color);
   text-shadow: 0.104vw 0.104vw 0.26vw rgba(0, 0, 0, 0.4);
   font-weight: bold;
   text-align: center;
@@ -104,7 +91,7 @@
 
   .contrast-level {
     font-size: 1.3em;
-    color: #333;
+    
     text-shadow: 0.104vw 0.104vw 0.26vw rgba(0, 0, 0, 0.4);
     font-weight: bold;
     text-align: center;

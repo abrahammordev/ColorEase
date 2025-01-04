@@ -30,7 +30,7 @@ function Points({ firstColor, secondColor }) {
       <p className={styles["points"]}>{contrast}</p>
       <div
         style={{
-          backgroundColor: "#F2F2F2",
+          backgroundColor: "var(--cover-bar-color)",
           width: isMobile ? "90%" : "100%",
           height: isMobile ? "2.2vh" : "1.56vw",
         }}
@@ -39,7 +39,7 @@ function Points({ firstColor, secondColor }) {
         <div
           className={styles["progress-bar"]}
           style={{
-            backgroundColor: "black",
+            backgroundColor: "var(--bar-color)",
             width: `${percentage}%`,
             height: isMobile ? "1.7vh" : "1.05vw",
           }}

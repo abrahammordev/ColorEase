@@ -19,6 +19,7 @@ function Lens({ firstColor, secondColor }) {
           style={{
             width: "100%",
             height: "100%",
+            backgroundColor: "var(--window-color)",
             display: "flex",
             justifyContent: "center",
           }}
@@ -41,6 +42,7 @@ function Lens({ firstColor, secondColor }) {
           popup.style.width = "70vw"; // Ajustamos para que ocupe casi todo el ancho
           popup.style.maxWidth = "none";
           popup.style.height = "80vw"; // Altura ampliada
+          popup.style.backgroundColor = "var(--window-color)"; // Fondo del popup lesgo
           
           
           popup.style.padding = "0"; // Eliminamos el padding para un uso óptimo del espacio

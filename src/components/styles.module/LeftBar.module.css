@@ -4,7 +4,7 @@
     left: 0;        
     width: 6vw;    
     height: 100vw;   
-    background-color: var(--leftbar-bg-color); /* Variable específica */
+    background-color: var(--secondary-bg-color); /* Variable específica */
     border-right: 0.11vw solid var(--border-color);
     color: var(--text-color);
   }
