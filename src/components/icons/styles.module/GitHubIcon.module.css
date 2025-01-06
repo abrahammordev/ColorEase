@@ -18,5 +18,6 @@
   .GitHubIcon {
     height: 4vw;
     transform: scale(1);
+    z-index: -1;
   }
 }

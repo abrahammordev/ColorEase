@@ -35,6 +35,7 @@
           height: 6vw;
           align-items: center;
           background-color: var(--secondary-bg-color);
+          z-index: 1;
 
       }
   
