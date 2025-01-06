@@ -1,5 +1,7 @@
 import styles from "./styles.module/Points.module.css";
 import { contrastRatio } from "../scripts/colorChecker";
+import React, { useState, useEffect } from "react";
+
 
 function Points({ firstColor, secondColor }) {
   const contrast = contrastRatio(firstColor, secondColor);
@@ -23,8 +25,31 @@ function Points({ firstColor, secondColor }) {
   } else if (percentage >= levels[0].threshold) {
     contrastLevel = "🔧 AA - Functional!";
   }
+//------------------------------------------------------------
 
-  const marginLeft = contrast >= 0 && contrast <= 9 ? "6vw" : contrast === 100 ? "3.5vw" : ""; //solucion del bug de la posicion de los points
+const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+//------------------------------------------------------------
+
+
+  const marginLeft = (() => {
+    if (contrast >= 0 && contrast <= 9) {
+      if (windowWidth > 700 && windowWidth <= 1200) return "10vw"; // Resolución intermedia
+      if (windowWidth > 1200) return "6vw"; // Pantallas grandes
+    }
+    if (contrast === 100) {
+      if (windowWidth > 700 && windowWidth <= 1200) return "6.7vw"; // Resolución intermedia
+      if (windowWidth > 1200) return "3.5vw"; // Pantallas grandes
+    }
+    return ""; // Por defecto, no aplica margen
+  })(); //solucion del bug de la posicion de los points
 
   return (
     <div className={styles.Points}>
