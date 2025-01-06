@@ -10,3 +10,11 @@
     height: 3vw; 
   }
 }
+
+@media (max-width: 1200px) and (min-width: 701px) {
+
+    .SettingsIcon {
+        margin-top: 0.5vw;
+    }
+
+}

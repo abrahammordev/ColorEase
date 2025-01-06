@@ -2,8 +2,8 @@
   transform: scale(1);
   margin-bottom: 3vw;
   margin-left: -1.5vw;
-  width: 3.5vw;
-  height: 3.5vw;
+  
+  height: 2.5vw;
   color: var(--text-color);
 }
 
@@ -16,7 +16,7 @@
 
 @media (max-width: 1200px) and (min-width: 701px) {
   .GitHubIcon {
-    width: 3vw;
-    height: 3vw;
+    height: 4vw;
+    transform: scale(1);
   }
 }

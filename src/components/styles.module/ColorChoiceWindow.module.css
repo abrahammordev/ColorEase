@@ -26,13 +26,14 @@
 }
 
 .social-media {
-  margin-top: -1.3svw;
+  margin-top: -2.1vw;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1vw;
   margin-left: 13vw;
   color : var(--text-color)
+
 }
 
 .random-colors {
@@ -50,7 +51,7 @@
 
 @media (max-width: 1200px) and (min-width: 701px) {
   .ColorChoiceWindow {
-    height: 40vw;
+    height: 37vw;
     width: 28vw;
     margin-left: 0;
     margin-top: 4.9vw;
@@ -60,6 +61,17 @@
   .text-properties {
     font-size: 1.5vw;
     margin-top: 5vw;
+  }
+
+  .social-media {
+    margin-right: 2vw;
+  
+  }
+  .social-media {
+    margin-top: -4vw;
+    margin-right: 4vw;
+    margin-left: 23vw;
+  
   }
 }
 
@@ -103,6 +115,7 @@
     margin-top: 8vw;
     display: flex;
     margin-left: 10vw;
+   
   }
 
   .random-colors button {
