@@ -50,48 +50,42 @@
 
 @media (max-width: 700px) {
   .Points {
-    margin-left: 10vw;
-    margin-right: 0;
-    margin-top: 8vw;
+    width: 70vw;
+    height: 70vw;
+    display: flex;
+    flex-direction: column;
   }
 
   .points-properties {
-    margin-top: 3.125vw;
-    font-size: 3em;
-    margin-left: 12vw;
+    font-size: 6vw;
+    text-align: center;
     text-shadow: 0.104vw 0.104vw 0.26vw rgba(0, 0, 0, 0.6);
   }
 
   .points {
-    font-size: 4.2em;
-    margin-left: 20vw;
+    text-align: center;
+    font-size: 14vw;
     text-shadow: 0.104vw 0.104vw 0.26vw rgba(0, 0, 0, 0.6);
-    margin-top: -2.6vw;
   }
 
   .progress-bar-cover {
     box-shadow: 0.104vw 0.104vw 0.26vw rgba(0, 0, 0, 0.6);
     border-radius: 3.125vw;
-    display: flex;
-    margin-top: -10vw;
-    width: 80vw;
     align-items: center;
-
+    margin-left:8vw
   }
 
   .progress-bar {
     border-radius: 3.125vw;
-    margin: 2%;
   }
 
   .standard-results {
     margin-top: 2.5vw;
-    text-align: left;
+    text-align: center;
   }
 
   .contrast-level {
-    font-size: 1.3em;
-    
+    font-size: 5vw;
     text-shadow: 0.104vw 0.104vw 0.26vw rgba(0, 0, 0, 0.4);
     font-weight: bold;
     text-align: center;
@@ -99,24 +93,18 @@
 }
 
 @media (max-width: 1200px) and (min-width: 701px) {
-
   .points-properties {
-    
     font-size: 4vw;
     margin-top: 7vw;
     margin-left: 5.5vw;
-    
   }
 
   .points {
     font-size: 6vw;
     margin-left: 8vw;
-    
-    
   }
 
   .contrast-level {
     font-size: 2vw;
-    
   }
 }

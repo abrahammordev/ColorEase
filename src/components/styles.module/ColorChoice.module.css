@@ -5,7 +5,6 @@
   line-height: 1.5;
   color: var(--text-color);
   background-color: var(--background-text-color);
-  
   background-clip: padding-box;
   border: 0.05vw solid #ced4da;
   appearance: none;

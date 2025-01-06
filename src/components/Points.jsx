@@ -60,7 +60,7 @@ const [windowWidth, setWindowWidth] = useState(window.innerWidth);
       <div
         style={{
           backgroundColor: "var(--cover-bar-color)",
-          width: isMobile ? "90%" : "100%",
+          width: isMobile ? "75%" : "100%",
           height: isMobile ? "2.2vh" : "1.56vw",
         }}
         className={styles["progress-bar-cover"]}

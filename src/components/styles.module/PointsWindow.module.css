@@ -11,13 +11,10 @@
 
 @media (max-width: 700px) {
   .PointsWindow {
-    height: 80vw;
-    width: 80vw;
-    margin-left: 5vw;
-    margin-top: 10vw;
+    height: 70vw;
+    width: 70vw;
     box-shadow: 0 0 0.47vw rgba(20, 20, 20, 0.3);
     border-radius: 5%;
-    flex-direction: column;
   }
 }
 

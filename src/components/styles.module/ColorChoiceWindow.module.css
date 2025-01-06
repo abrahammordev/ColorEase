@@ -32,8 +32,7 @@
   justify-content: center;
   gap: 1vw;
   margin-left: 13vw;
-  color : var(--text-color)
-
+  color: var(--text-color);
 }
 
 .random-colors {
@@ -65,25 +64,20 @@
 
   .social-media {
     margin-right: 2vw;
-  
   }
   .social-media {
     margin-top: -4vw;
     margin-right: 4vw;
     margin-left: 23vw;
-  
   }
 }
 
 @media (max-width: 700px) {
   .ColorChoiceWindow {
-    height: 80vw;
-    width: 80vw;
-    margin-left: 5vw;
-    margin-top: 15vw;
+    height: 70vw;
+    width: 70vw;
     box-shadow: 0 0 0.47vw rgba(20, 20, 20, 0.3);
     border-radius: 5%;
-    flex-direction: column;
   }
   .color-button {
     margin-top: 10vw;
@@ -92,13 +86,13 @@
 
   .color-properties {
     margin-top: 4vw;
-    margin-left: 2.08vw;
+    margin-left: -5vw;
     font-size: 3vw;
   }
 
   .text-properties {
     margin-top: 4vw;
-    margin-left: 25vw;
+    margin-left: 28vw;
     text-shadow: 0.104vw 0.104vw 0.26vw rgba(0, 0, 0, 0.4);
     font-size: 2em;
   }
@@ -108,22 +102,12 @@
     align-items: center;
     justify-content: center;
     gap: 1vw;
-    margin-left: 45vw;
+    margin-left: 50vw;
   }
-
-  .random-colors {
-    margin-top: 8vw;
-    display: flex;
-    margin-left: 10vw;
-   
-  }
-
-  .random-colors button {
-    margin-top: 4vw;
-    margin-left: 12vw;
-  }
-  .social-media {
-    margin-left: 55vw;
+  .random-colors{
+    font-size: 1.5vw;
+    margin-top: 5vw;
+    margin-left: 13.5vw;
   }
 }
 
