@@ -14,6 +14,7 @@
   --cover-bar-color: #f2f2f2;
   --mainview-bg-color: #ffffff;
   --preview-bg-color: #f3f3f3;
+  --optimal-color-text: #ffffff;
 }
 
 [data-theme="dark"] {
@@ -30,6 +31,7 @@
   --cover-bar-color: #454545;
   --mainview-bg-color: #1e1b2e;
   --preview-bg-color: #3b3659;
+  --optimal-color-text: #161616;
 }
 
 [data-theme="color-blindness"] {
