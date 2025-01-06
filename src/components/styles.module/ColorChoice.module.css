@@ -9,7 +9,7 @@
   background-clip: padding-box;
   border: 0.05vw solid #ced4da;
   appearance: none;
-  border-radius: 0.2vw;
+  border-radius: 0.6vw;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   :focus {
     color: #212529;
@@ -20,9 +20,11 @@
   }
 }
 
-.colorChoice {
+.ColorChoice {
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-right: 1.5vw;
   
 }
 
@@ -39,6 +41,7 @@
   width: 1.05vw;
   height: 1.05vw;
   pointer-events: none; /* Ignora clics en el input para que no interfiera */
+  
 }
 
 @media (max-width: 700px) {
