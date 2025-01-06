@@ -32,7 +32,7 @@ function PreviewMobile({ firstColor, secondColor }) {
         if (popup) {
           popup.style.width = "90vw"; 
           popup.style.maxWidth = "none";
-          popup.style.height = "90vw";
+          popup.style.height = "150vw";
           popup.style.backgroundColor = "var(--window-color)";
           popup.style.padding = "0";
           popup.style.overflow = "hidden";
