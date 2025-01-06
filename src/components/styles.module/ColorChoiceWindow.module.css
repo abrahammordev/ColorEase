@@ -48,7 +48,7 @@
   background-clip: padding-box;
 }
 
-@media (max-width: 1200px) and (min-width: 700px) {
+@media (max-width: 1200px) and (min-width: 701px) {
   .ColorChoiceWindow {
     height: 40vw;
     width: 28vw;
@@ -114,7 +114,7 @@
   }
 }
 
-@media (max-width: 1200px) and (min-width: 700px) {
+@media (max-width: 1200px) and (min-width: 701px) {
   .random-colors button {
     font-size: 1.5vw;
     margin-top: 3vw;
