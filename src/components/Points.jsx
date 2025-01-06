@@ -24,10 +24,14 @@ function Points({ firstColor, secondColor }) {
     contrastLevel = "🔧 AA - Functional!";
   }
 
+  const marginLeft = contrast >= 0 && contrast <= 9 ? "6vw" : contrast === 100 ? "3.5vw" : ""; //solucion del bug de la posicion de los points
+
   return (
     <div className={styles.Points}>
       <p className={styles["points-properties"]}>Points</p>
-      <p className={styles["points"]}>{contrast}</p>
+      <p className={styles["points"]} style={{
+    marginLeft,
+  }}>{contrast}</p>
       <div
         style={{
           backgroundColor: "var(--cover-bar-color)",
