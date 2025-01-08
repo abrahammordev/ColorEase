@@ -78,36 +78,46 @@
     width: 70vw;
     box-shadow: 0 0 0.47vw rgba(20, 20, 20, 0.3);
     border-radius: 5%;
+    margin: 0;
   }
   .color-button {
     margin-top: 10vw;
-    margin-left: 10vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 
   .color-properties {
     margin-top: 4vw;
-    margin-left: -5vw;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 3vw;
+    text-align: center;
   }
 
   .text-properties {
     margin-top: 4vw;
-    margin-left: 28vw;
+    margin-left: auto;
+    margin-right: auto;
     text-shadow: 0.104vw 0.104vw 0.26vw rgba(0, 0, 0, 0.4);
     font-size: 2em;
+    text-align: center;
   }
 
   .social-media {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: right;
     gap: 1vw;
-    margin-left: 50vw;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .random-colors{
+  .random-colors {
     font-size: 1.5vw;
     margin-top: 5vw;
-    margin-left: 13.5vw;
+    margin-left: auto;
+    justify-content: center;
+    margin-right: auto;
+    text-align: center;
   }
 }
 

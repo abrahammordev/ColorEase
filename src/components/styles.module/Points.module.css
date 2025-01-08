@@ -54,25 +54,31 @@
     height: 70vw;
     display: flex;
     flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
   }
 
   .points-properties {
     font-size: 6vw;
     text-align: center;
     text-shadow: 0.104vw 0.104vw 0.26vw rgba(0, 0, 0, 0.6);
+    margin: auto;
   }
 
   .points {
     text-align: center;
     font-size: 14vw;
     text-shadow: 0.104vw 0.104vw 0.26vw rgba(0, 0, 0, 0.6);
+    margin: auto;
   }
 
   .progress-bar-cover {
     box-shadow: 0.104vw 0.104vw 0.26vw rgba(0, 0, 0, 0.6);
     border-radius: 3.125vw;
-    align-items: center;
-    margin-left:8vw
+    align-items: left;
+    justify-content: left;
+    margin: auto;
   }
 
   .progress-bar {
@@ -82,6 +88,7 @@
   .standard-results {
     margin-top: 2.5vw;
     text-align: center;
+    margin: auto;
   }
 
   .contrast-level {
@@ -89,6 +96,7 @@
     text-shadow: 0.104vw 0.104vw 0.26vw rgba(0, 0, 0, 0.4);
     font-weight: bold;
     text-align: center;
+    margin: auto;
   }
 }
 
