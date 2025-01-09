@@ -7,6 +7,7 @@
     background-color: var(--secondary-bg-color); /* Variable específica */
     border-right: 0.11vw solid var(--border-color);
     color: var(--text-color);
+    z-index: 1;
   }
   
   .Icons {
@@ -63,6 +64,7 @@
           height: 12vw;
           align-items: center;
           background-color: var(--secondary-bg-color);
+          z-index: 1;
       }
   
       .LogoIcon {
