@@ -48,8 +48,6 @@
   background-clip: padding-box;
 }
 
-
-
 @media (max-width: 1200px) and (min-width: 701px) {
   .ColorChoiceWindow {
     height: 37vw;
@@ -67,16 +65,14 @@
   .social-media {
     margin-left: 19vw;
     margin-top: -4vw;
-  
   }
-  
 }
 
 @media (max-width: 700px) {
   .ColorChoiceWindow {
     height: 70vw;
     width: 70vw;
-    box-shadow: 0 0 0.47vw rgba(20, 20, 20, 0.3);
+    box-shadow: 2px 1px 1.5px rgba(20, 20, 20, 0.3);
     border-radius: 5%;
     margin: 0;
   }
@@ -99,7 +95,7 @@
     margin-top: 4vw;
     margin-left: auto;
     margin-right: auto;
-    text-shadow: 0.104vw 0.104vw 0.26vw rgba(0, 0, 0, 0.4);
+    text-shadow: 0.104px 0.104px 0.26px rgba(0, 0, 0, 0.4);
     font-size: 2em;
     text-align: center;
   }
