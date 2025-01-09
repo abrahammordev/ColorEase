@@ -65,12 +65,12 @@ function ColorChoiceWindow({
         />
       </div>
       <div className={styles["social-media"]}>
-        <a href="https://buymeacoffee.com/colorease" target="_blank">
+        
           <BuyMeACoffee />
-        </a>
-        <a href="https://github.com/abrahammordev/ColorEase" target="_blank">
+        
+        
           <GitHubIcon />
-        </a>
+        
       </div>
     </div>
   );

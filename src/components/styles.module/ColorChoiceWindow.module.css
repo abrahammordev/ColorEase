@@ -49,6 +49,8 @@
   background-clip: padding-box;
 }
 
+
+
 @media (max-width: 1200px) and (min-width: 701px) {
   .ColorChoiceWindow {
     height: 37vw;
@@ -64,15 +66,11 @@
   }
 
   .social-media {
-    margin-right: 2vw;
-  
-  }
-  .social-media {
+    margin-left: 19vw;
     margin-top: -4vw;
-    margin-right: 4vw;
-    margin-left: 23vw;
   
   }
+  
 }
 
 @media (max-width: 700px) {

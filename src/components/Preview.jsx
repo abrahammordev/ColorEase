@@ -67,50 +67,57 @@ function Preview({ firstColor, secondColor }) {
         <div className={styles.radioLabel}>Do you have a favorite color?</div>
         <div className={styles.radioGroup}>
           <label
-            style={{
-              display: "flex",
-              alignItems: "center",
-              cursor: "pointer",
-            }}
-          >
-            <input
-              type="radio"
-              name="favoriteColor"
-              value="yes"
-              style={{
-                appearance: "none",
-                width: "1.05vw",
-                height: "1.05vw",
-                borderRadius: "50%",
-                border: `2px solid ${currentSecondColor}`,
-                marginRight: "0.52vw",
-              }}
-            />
-            Yes
-          </label>
-          <label
-            style={{
-              display: "flex",
-              alignItems: "center",
-              cursor: "pointer",
-            }}
-          >
-            <input
-              type="radio"
-              name="favoriteColor"
-              value="no"
-              style={{
-                appearance: "none",
-                width: "1.05vw",
-                height: "1.05vw",
-                borderRadius: "50%",
-                border: `2px solid ${currentSecondColor}`,
-                marginRight: "0.52vw",
-              }}
-            />
-            No
-          </label>
-        </div>
+    style={{
+      display: "flex",
+      alignItems: "center",
+      
+    }}
+  >
+    <input
+      type="radio"
+      name="favoriteColor"
+      value="yes"
+      style={{
+        appearance: "none",
+        width: "1.05vw",
+        height: "1.05vw",
+        borderRadius: "50%",
+        border: `2px solid ${currentSecondColor}`,
+        marginRight: "0.52vw",
+        
+        backgroundColor: currentSecondColor,
+      }}
+      className={styles.customRadio}
+    />
+    Yes
+  </label>
+  <label
+    style={{
+      display: "flex",
+      alignItems: "center",
+      
+    }}
+  >
+    <input
+      type="radio"
+      name="favoriteColor"
+      value="no"
+      style={{
+        appearance: "none",
+        width: "1.05vw",
+        height: "1.05vw",
+        borderRadius: "50%",
+        border: `2px solid ${currentSecondColor}`,
+        marginRight: "0.52vw",
+        
+        backgroundColor: currentSecondColor,
+      }}
+      className={styles.customRadio}
+    />
+    No
+      </label>
+
+      </div>
         <div
           className={styles.buttonContainer}
           style={{ border: `2px solid ${currentSecondColor}` }}
