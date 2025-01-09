@@ -13,3 +13,12 @@
         align-items: center;
     }
 }
+
+@media (max-width: 700px) {
+    .appContainer {
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        align-items: center;
+    }
+}

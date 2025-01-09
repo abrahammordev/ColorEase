@@ -23,7 +23,7 @@ function PreviewMobile({ firstColor, secondColor }) {
       ),
       showCloseButton: true,
       showCancelButton: false,
-      showConfirmButton: false, // Sin botones adicionales
+      showConfirmButton: false, 
       customClass: {
         popup: "swal2-preview-modal",
       },
@@ -32,7 +32,7 @@ function PreviewMobile({ firstColor, secondColor }) {
         if (popup) {
           popup.style.width = "90vw"; 
           popup.style.maxWidth = "none";
-          popup.style.height = "150vw";
+          popup.style.height = "170vw";
           popup.style.backgroundColor = "var(--window-color)";
           popup.style.padding = "0";
           popup.style.overflow = "hidden";
