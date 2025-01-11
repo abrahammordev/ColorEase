@@ -13,6 +13,12 @@ function Preview({ firstColor, secondColor }) {
     setIsChecked(event.target.checked);
   };
 
+  const [selectedValue, setSelectedValue] = useState(null);
+
+  const handleChange = (value) => {
+    setSelectedValue(value); 
+  };
+
   return (
     <div className={styles.Preview}>
       <div
@@ -67,55 +73,57 @@ function Preview({ firstColor, secondColor }) {
         />
         <div className={styles.radioLabel}>Do you have a favorite color?</div>
         <div className={styles.radioGroup}>
-          <label
-    style={{
-      display: "flex",
-      alignItems: "center",
-      
-    }}
-  >
-    <input
-      type="radio"
-      name="favoriteColor"
-      value="yes"
-      style={{
-        appearance: "none",
-        width: "1.05vw",
-        height: "1.05vw",
-        borderRadius: "50%",
-        border: `2px solid ${currentSecondColor}`,
-        marginRight: "0.52vw",
-        
-        backgroundColor: currentSecondColor,
-      }}
-      className={styles.customRadio}
-    />
-    Yes
-  </label>
-  <label
-    style={{
-      display: "flex",
-      alignItems: "center",
-      
-    }}
-  >
-    <input
-      type="radio"
-      name="favoriteColor"
-      value="no"
-      style={{
-        appearance: "none",
-        width: "1.05vw",
-        height: "1.05vw",
-        borderRadius: "50%",
-        border: `2px solid ${currentSecondColor}`,
-        marginRight: "0.52vw",
-        
-        backgroundColor: currentSecondColor,
-      }}
-      className={styles.customRadio}
-    />
-    No
+        <label
+        style={{
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <input
+          type="radio"
+          name="favoriteColor"
+          value="yes"
+          checked={selectedValue === "yes"} 
+          onChange={() => handleChange("yes")} 
+          style={{
+            appearance: "none",
+            width: "1.05vw",
+            height: "1.05vw",
+            borderRadius: "50%",
+            border: `2px solid ${currentSecondColor}`,
+            marginRight: "0.52vw",
+            backgroundColor: selectedValue === "yes" ? currentSecondColor : "transparent",
+            cursor: "pointer",
+          }}
+        />
+        Yes
+      </label>
+
+      {/* Botón "No" */}
+      <label
+        style={{
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <input
+          type="radio"
+          name="favoriteColor"
+          value="no"
+          checked={selectedValue === "no"} 
+          onChange={() => handleChange("no")} 
+          style={{
+            appearance: "none",
+            width: "1.05vw",
+            height: "1.05vw",
+            borderRadius: "50%",
+            border: `2px solid ${currentSecondColor}`,
+            marginRight: "0.52vw",
+            backgroundColor: selectedValue === "no" ? currentSecondColor : "transparent",
+            cursor: "pointer",
+          }}
+        />
+        No
       </label>
 
       </div>
