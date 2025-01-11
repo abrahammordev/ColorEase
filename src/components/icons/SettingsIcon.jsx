@@ -1,6 +1,51 @@
-import styles from "./styles.module/SettingsIcon.module.css";
+import React from "react";
+import ReactDOM from "react-dom/client"; 
+import Swal from "sweetalert2"; 
+import styles from "./styles.module/SettingsIcon.module.css"; 
+
+const AlertSettings = () => {
+  return (
+    <div className={styles.alertContainer}>
+      <h2>New Features Coming Soon!</h2>
+      <h3>Stay tuned for exciting updates and new features.</h3>
+      <div className="icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="yellow"
+          className="bi bi-lightning"
+          viewBox="0 0 16 16"
+        >
+          <path d="M8 0c-.372 0-.736.217-.88.586L6.228 3h-1.04c-.644 0-1.126.76-.747 1.306l5.145 8.213c.47.747 1.61.384 1.61-.551v-4.686l1.846-.865c.538-.249.582-.987.065-1.399l-4.822-4.822C10.563.217 9.961 0 9.548 0H8z" />
+        </svg>
+      </div>
+    </div>
+  );
+};
 
 function SettingsIcon() {
+  const showSettingsPanel = () => {
+    Swal.fire({
+      html: '<div id="alert-settings"></div>', 
+      showCloseButton: true,
+      focusConfirm: false,
+      width: "40vw",
+      padding: "1.25vw",
+      fontsize: "1.25vw",
+      customClass: {
+        popup: "custom-popup",
+        closeButton: "custom-close-button",
+      },
+      didOpen: () => {
+        const root = ReactDOM.createRoot(
+          document.getElementById("alert-settings")
+        );
+        root.render(<AlertSettings />);
+      },
+    });
+  };
+
   return (
     <div>
       <svg
@@ -9,6 +54,8 @@ function SettingsIcon() {
         width="1.25vw"
         height="1.25vw"
         viewBox="0 0 24 24"
+        onClick={showSettingsPanel} 
+        style={{ cursor: "pointer" }}
       >
         <path
           fill="currentColor"
@@ -16,7 +63,6 @@ function SettingsIcon() {
         ></path>
       </svg>
     </div>
-      
   );
 }
 
