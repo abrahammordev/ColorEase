@@ -60,6 +60,7 @@ function Preview({ firstColor, secondColor }) {
           placeholder=""
           className={styles.input}
           style={{
+            borderColor: currentSecondColor,
             backgroundColor: currentSecondColor,
             color: currentFirstColor,
           }}
