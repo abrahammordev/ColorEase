@@ -43,7 +43,9 @@ export function contrastRatio(color1, color2) {
 
   let L1 = Math.max(lum1, lum2);
   let L2 = Math.min(lum1, lum2);
-
+  if (color1 === color2) {
+    return 0;
+  }
   return (Math.ceil(((L1 + 0.05) / (L2 + 0.05))/21*100));
 }
 
