@@ -92,7 +92,7 @@ function Preview({ firstColor, secondColor }) {
             borderRadius: "50%",
             border: `2px solid ${currentSecondColor}`,
             marginRight: "0.52vw",
-            backgroundColor: selectedValue === "yes" ? currentSecondColor : "transparent",
+            backgroundColor: selectedValue === "no" ? currentSecondColor : "transparent",
             cursor: "pointer",
           }}
         />
@@ -119,7 +119,7 @@ function Preview({ firstColor, secondColor }) {
             borderRadius: "50%",
             border: `2px solid ${currentSecondColor}`,
             marginRight: "0.52vw",
-            backgroundColor: selectedValue === "no" ? currentSecondColor : "transparent",
+            backgroundColor: selectedValue === "yes" ? currentSecondColor : "transparent",
             cursor: "pointer",
           }}
         />
