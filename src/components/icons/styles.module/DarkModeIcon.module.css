@@ -1,47 +1,90 @@
 .checkboxWrapper {
     display: inline-flex;
     align-items: center;
-     /* Duplicado */
+    position: relative; /* Asegurar posición relativa para el contenedor */
 }
 
 .checkbox {
     appearance: none;
-    background-color:#fe9501;
-    border-radius: 7.5vw; /* Duplicado */
+    background-color: #fe9501;
+    border-radius: 7.5vw;
     border: none;
     flex-shrink: 0;
-    height: 2.08vw; /* Duplicado */
+    height: 2.08vw;
     margin: 0;
     position: relative;
-    width: 3.12vw; /* Duplicado */
+    width: 3.12vw;
     cursor: pointer;
     transition: all 100ms ease-out;
 }
 
-.checkbox::before {
-    content: "";
-    position: absolute;
-    bottom: -0.62vw; /* Duplicado */
-    left: -0.62vw; /* Duplicado */
-    right: -0.62vw; /* Duplicado */
-    top: -0.62vw; /* Duplicado */
-}
-
+/* Círculo blanco */
 .checkbox::after {
     content: "";
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 50%;
-    height: 1.46vw; /* Duplicado */
-    left: 0.32vw; /* Duplicado */
+    height: 1.46vw;
+    left: 0.32vw;
     position: absolute;
-    top: 0.32vw; /* Duplicado */
-    width: 1.46vw; /* Duplicado */
+    top: 0.32vw;
+    width: 1.46vw;
     transition: all 200ms ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.checkbox:hover {
-    background-color: #fe9501;
-    transition-duration: 0s;
+/* Movimiento del círculo */
+.checkbox:checked::after {
+    left: 1.36vw;
+}
+
+/* Wrapper para SVG */
+.iconWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none; /* SVG no interferirá con clics */
+}
+
+/* Estilo base para SVG */
+.icon {
+    position: absolute;
+    width: 1.2vw; /* Tamaño aumentado */
+    height: 1.2vw; /* Tamaño aumentado */
+    opacity: 0; /* Oculto por defecto */
+    transition: all 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Ícono cuando no está checked */
+.iconLight {
+    transform: translateX(-0.5vw); /* Posición inicial a la izquierda */
+    opacity: 1;
+    width: 1.2vw; /* Tamaño aumentado */
+    height: 1.2vw; /* Tamaño aumentado */
+}
+
+.checkbox:checked ~ .label .iconLight {
+    opacity: 0; /* Desaparece */
+    transform: translateX(-100%); /* Se desliza fuera de la vista */
+}
+
+/* Ícono cuando está checked */
+.iconDark {
+    transform: translateX(-100%); /* Posición inicial a la izquierda */
+    opacity: 0; /* Oculto por defecto */
+    width: 1.2vw; /* Tamaño aumentado */
+    height: 1.2vw; /* Tamaño aumentado */
+}
+
+.checkbox:checked ~ .label .iconDark {
+    opacity: 1; /* Aparece */
+    transform: translateX(0.6vw); /* Se desliza al centro del círculo */
 }
 
 .checkbox:checked {
@@ -56,17 +99,28 @@
     background-color: #535db3;
 }
 
-@media (max-width: 1200px) and (min-width: 701px) {
-
-    
-}
-
 @media (max-width: 700px) {
     .checkbox {
-       
         transform: scale(3);
         margin-right: 4vw;
         margin-left: 6vw;
         margin-bottom: 0.5vw;
     }
-  }
+    .iconLight {
+        transform: translateX(-0.5vw); /* Posición inicial a la izquierda */
+        opacity: 1;
+        width: 3vw; /* Tamaño aumentado */
+        height: 3vw; /* Tamaño aumentado */
+        
+    }
+    .iconDark {
+        transform: translateX(-100%); /* Posición inicial a la izquierda */
+        opacity: 0; /* Oculto por defecto */
+        width: 3vw; /* Tamaño aumentado */
+        height: 3vw; /* Tamaño aumentado */
+    }
+    .checkbox:checked ~ .label .iconDark {
+        opacity: 1; /* Aparece */
+        transform: translateX(2.7vw); /* Se desliza al centro del círculo */
+    }
+}
