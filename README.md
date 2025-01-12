@@ -11,7 +11,7 @@
 - **Accessibility Check:** Ensures that color combinations meet accessibility standards ✅.
 - **Dark/Light Mode:** Option to toggle the website theme, adjusting the visual experience 🌙☀️.
 
-## New Features
+## New Features 🛤️
 
 - **Purpose:** This place will be enhanced with a variety of new functionalities to improve accessibility, user experience, and system capabilities in the future.
 
