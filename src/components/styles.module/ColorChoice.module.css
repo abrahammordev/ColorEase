@@ -24,7 +24,6 @@
   align-items: center;
   justify-content: center;
   margin-right: 1.5vw;
-  
 }
 
 .color-icon {
@@ -34,17 +33,16 @@
 }
 
 .hidden-color-input {
-  top: 0; /* Ajusta según la posición de la imagen */
+  top: 0;
   left: 0;
   opacity: 0;
   width: 1.05vw;
   height: 1.05vw;
-  pointer-events: none; /* Ignora clics en el input para que no interfiera */
-  
+  /* Ignore clicks on the input to avoid interference */
+  pointer-events: none;
 }
 
 @media (max-width: 700px) {
-  
   .text-input {
     font-size: 1.1em;
   }
@@ -56,16 +54,14 @@
 }
 
 @media (max-width: 1200px) and (min-width: 701px) {
-
-  .text-input{
+  .text-input {
     font-size: 1.4vw;
   }
-  p{
+  p {
     font-size: 1.5vw;
   }
   .color-icon {
     width: 3vw;
     height: 3vw;
   }
-  
 }

@@ -1,113 +1,114 @@
 .checkboxWrapper {
-    display: inline-flex;
-    align-items: center;
-    position: relative;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
 }
 
 .checkbox {
-    appearance: none;
-    background-color: #dfe1e4;
-    border-radius: 7.5vw;
-    border: none;
-    flex-shrink: 0;
-    height: 2.08vw;
-    margin: 0;
-    
-    position: relative;
-    width: 3.12vw;
-    cursor: pointer;
-    transition: all 100ms ease-out;
+  appearance: none;
+  background-color: #dfe1e4;
+  border-radius: 7.5vw;
+  border: none;
+  flex-shrink: 0;
+  height: 2.08vw;
+  margin: 0;
+
+  position: relative;
+  width: 3.12vw;
+  cursor: pointer;
+  transition: all 100ms ease-out;
 }
 
-/* Círculo blanco */
+/* White circle */
 .checkbox::after {
-    content: "";
-    background-color: #fff;
-    border-radius: 50%;
-    height: 1.46vw;
-    left: 0.32vw;
-    position: absolute;
-    top: 0.32vw;
-    width: 1.46vw;
-    transition: all 200ms ease-out;
+  content: "";
+  background-color: #fff;
+  border-radius: 50%;
+  height: 1.46vw;
+  left: 0.32vw;
+  position: absolute;
+  top: 0.32vw;
+  width: 1.46vw;
+  transition: all 200ms ease-out;
 }
 
-/* Movimiento del círculo */
+/* Circle movement */
 .checkbox:checked::after {
-    left: 1.36vw;
+  left: 1.36vw;
 }
 
 .label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none; /* Deshabilita clics en el label */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Disable lable´s click */
+  pointer-events: none;
 }
 
 .iconWrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    pointer-events: none; /* Evita interferencia con clics */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Avoid interference with clicks */
+  pointer-events: none;
 }
 
 .icon {
-    position: absolute;
-    width: 1.5vw;
-    height: 1.5vw;
-    opacity: 0;
-    transition: all 0.2s ease-in-out;
+  position: absolute;
+  width: 1.5vw;
+  height: 1.5vw;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
 }
 
-/* SVG del estado no marcado */
+/* SVG of the unchecked state */
 .iconLight {
-    transform: translateX(-0.55vw);
-    opacity: 1;
+  transform: translateX(-0.55vw);
+  opacity: 1;
 }
 
 .checkbox:checked ~ .label .iconLight {
-    opacity: 0;
-    transform: translateX(-100%);
+  opacity: 0;
+  transform: translateX(-100%);
 }
 
-/* SVG del estado marcado */
+/* SVG of the checked state */
 .iconDark {
-    transform: translateX(-100%);
-    opacity: 0;
+  transform: translateX(-100%);
+  opacity: 0;
 }
 
 .checkbox:checked ~ .label .iconDark {
-    opacity: 1;
-    transform: translateX(0.55vw);
-    
+  opacity: 1;
+  transform: translateX(0.55vw);
 }
 
 .checkbox:hover {
-    background-color: #c9cbcd;
+  background-color: #c9cbcd;
 }
 
 .checkbox:checked {
-    background-color: #6e79d6;
+  background-color: #6e79d6;
 }
 
 .checkbox:checked:hover {
-    background-color: #535db3;
+  background-color: #535db3;
 }
 
 @media (max-width: 700px) {
-    .checkbox {
-        height: 4vw;
-        width: 6vw;
-    }
-    .icon {
-        width: 3vw;
-        height: 3vw;
-    }
+  .checkbox {
+    height: 4vw;
+    width: 6vw;
+  }
+  .icon {
+    width: 3vw;
+    height: 3vw;
+  }
 }
