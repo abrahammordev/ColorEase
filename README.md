@@ -82,3 +82,13 @@ npm ci
 npm start
 ```
 ### That's it! 🎉 The project should now be up and running on your local machine. Enjoy! 😄
+
+## Screenshots 📷
+
+<p align="center"><img src="https://github.com/abrahammordev/ColorEase/blob/main/screenshots/generalScreenshot.png?raw=true" width="1000px" /></p>
+<p align="center"><img src="https://github.com/abrahammordev/ColorEase/blob/main/screenshots/colorSectionScreenshot.png?raw=true" width="1000px" /></p>
+<p align="center"><img src="https://github.com/abrahammordev/ColorEase/blob/main/screenshots/previewScreenshot.png?raw=true" width="1000px" /></p>
+
+## Live view 💻
+
+<p><a href="https://color-ease.vercel.app/">Click here!</a></p>
