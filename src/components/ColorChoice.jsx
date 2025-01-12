@@ -4,7 +4,7 @@ import colorCircle from "../images/color-circle-icon.png";
 
 //Component for color picker where user can choose color by entering hex code or using color picker.
 
-function ColorChoice({ id, value = "#000000", onColorChange = () => {} }) {
+function ColorChoice({value = "#000000", onColorChange = () => {} }) {
   const colorInputRef = useRef(null);
   const textInputRef = useRef(null);
   const [textValue, setTextValue] = useState(value);

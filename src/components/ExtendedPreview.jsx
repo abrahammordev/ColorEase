@@ -1,6 +1,6 @@
 import styles from "./styles.module/ExtendedPreview.module.css";
 import React, { useState } from "react";
-import SwitchColorsButton from "./SwitchColorsButton";
+
 
 //Variation of the preview component, with less elements for SweetAlerts.
 
