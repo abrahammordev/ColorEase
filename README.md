@@ -11,6 +11,23 @@
 - **Accessibility Check:** Ensures that color combinations meet accessibility standards ✅.
 - **Dark/Light Mode:** Option to toggle the website theme, adjusting the visual experience 🌙☀️.
 
+## New Features
+
+- **Purpose:** This place will be enhanced with a variety of new functionalities to improve accessibility, user experience, and system capabilities in the future.
+
+### Potential Future Features:
+
+- **Daltonic Mode (Color Blindness):**  
+  Implement a high-contrast color scheme specifically designed to assist users with color blindness. This mode would allow users to toggle between different contrast levels, ensuring that text and interactive elements are distinguishable, regardless of the type of color blindness.
+
+- **Dyslexia-Friendly Mode:**  
+  Introduce a dyslexia-friendly mode that adjusts the font style to one optimized for dyslexic users (such as OpenDyslexic), along with adjusted line spacing, letter-spacing, and possibly even background colors to improve reading comprehension and comfort.
+
+### User & Session Management Features:
+
+- **User Creation:**  
+  Enable a simple and intuitive user registration process. This would include features like email validation, password strength checks, and optional multi-factor authentication (MFA) to enhance user security.
+
 ## Branch Workflow 🧑‍💻🔄
 
 The project follows a well-organized branch structure to keep the code clean, stable, and easy to manage 🧹. Below is the purpose of each branch:
