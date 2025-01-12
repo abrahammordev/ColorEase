@@ -56,7 +56,7 @@ Follow these steps to install and run the project on your local machine.
 
 Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 
-## Clone the Repository 📥
+### Clone the Repository 📥
 
 Clone this repository to your local machine:
 
@@ -64,21 +64,21 @@ Clone this repository to your local machine:
 git clone https://github.com/abrahammordev/ColorEase.git
 ```
 
-## Navigate to your directory 📂
+### Navigate to your directory 📂
 
 ```bash
 cd ColorEase
 ```
 
-## Install necessary dependencies 📦
+### Install necessary dependencies 📦
 
 ```bash
 npm ci
 ```
 
-## Start the Project 🚀
+### Start the Project 🚀
 
 ```bash
 npm start
 ```
-## That's it! 🎉 The project should now be up and running on your local machine. Enjoy! 😄
+### That's it! 🎉 The project should now be up and running on your local machine. Enjoy! 😄
