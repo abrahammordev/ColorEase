@@ -112,6 +112,7 @@
 
 .icons{
     margin-right: 0.8vw;
+    margin-top: 0.45vw;
     
 
 }
@@ -160,6 +161,12 @@
 
     .button{
         font-size: 1.3vw;
+    }
+    .icons{
+        
+        margin-top: 0.8vw;
+        
+    
     }
 }
 

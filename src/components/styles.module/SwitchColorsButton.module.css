@@ -1,120 +1,113 @@
 .checkboxWrapper {
     display: inline-flex;
     align-items: center;
-    margin-top: 0.5vw; /* Duplicado */
-    margin-right: 2vw; /* Duplicado */
+    position: relative;
 }
 
 .checkbox {
     appearance: none;
     background-color: #dfe1e4;
-    border-radius: 7.5vw; /* Duplicado */
+    border-radius: 7.5vw;
     border: none;
     flex-shrink: 0;
-    height: 2.08vw; /* Duplicado */
+    height: 2.08vw;
     margin: 0;
+    
     position: relative;
-    width: 3.12vw; /* Duplicado */
+    width: 3.12vw;
     cursor: pointer;
     transition: all 100ms ease-out;
 }
 
-.checkbox::before {
-    content: "";
-    position: absolute;
-    bottom: -0.62vw; /* Duplicado */
-    left: -0.62vw; /* Duplicado */
-    right: -0.62vw; /* Duplicado */
-    top: -0.62vw; /* Duplicado */
-}
-
+/* Círculo blanco */
 .checkbox::after {
     content: "";
     background-color: #fff;
     border-radius: 50%;
-    height: 1.46vw; /* Duplicado */
-    left: 0.32vw; /* Duplicado */
+    height: 1.46vw;
+    left: 0.32vw;
     position: absolute;
-    top: 0.32vw; /* Duplicado */
-    width: 1.46vw; /* Duplicado */
+    top: 0.32vw;
+    width: 1.46vw;
     transition: all 200ms ease-out;
+}
+
+/* Movimiento del círculo */
+.checkbox:checked::after {
+    left: 1.36vw;
+}
+
+.label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Deshabilita clics en el label */
+}
+
+.iconWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none; /* Evita interferencia con clics */
+}
+
+.icon {
+    position: absolute;
+    width: 1.5vw;
+    height: 1.5vw;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+/* SVG del estado no marcado */
+.iconLight {
+    transform: translateX(-0.55vw);
+    opacity: 1;
+}
+
+.checkbox:checked ~ .label .iconLight {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+/* SVG del estado marcado */
+.iconDark {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.checkbox:checked ~ .label .iconDark {
+    opacity: 1;
+    transform: translateX(0.55vw);
+    
 }
 
 .checkbox:hover {
     background-color: #c9cbcd;
-    transition-duration: 0s;
 }
 
 .checkbox:checked {
     background-color: #6e79d6;
 }
 
-.checkbox:checked::after {
-    left: 1.36vw; /* Duplicado */
-}
-
 .checkbox:checked:hover {
     background-color: #535db3;
 }
 
-@media (max-width: 1200px) and (min-width: 701px) {
-
-    .checkboxWrapper {
-        display: inline-flex;
-        align-items: center;
-        margin-top: 1vw; /* Duplicado */
-        margin-right: 2vw; /* Duplicado */
-    }
-    
+@media (max-width: 700px) {
     .checkbox {
-        appearance: none;
-        background-color: #dfe1e4;
-        border-radius: 7.5vw; /* Duplicado */
-        border: none;
-        flex-shrink: 0;
-        height: 2.08vw; /* Duplicado */
-        margin: 0;
-        position: relative;
-        width: 3.12vw; /* Duplicado */
-        cursor: pointer;
-        transition: all 100ms ease-out;
+        height: 4vw;
+        width: 6vw;
     }
-    
-    .checkbox::before {
-        content: "";
-        position: absolute;
-        bottom: -0.62vw; /* Duplicado */
-        left: -0.62vw; /* Duplicado */
-        right: -0.62vw; /* Duplicado */
-        top: -0.62vw; /* Duplicado */
-    }
-    
-    .checkbox::after {
-        content: "";
-        background-color: #fff;
-        border-radius: 50%;
-        height: 1.46vw; /* Duplicado */
-        left: 0.32vw; /* Duplicado */
-        position: absolute;
-        top: 0.32vw; /* Duplicado */
-        width: 1.46vw; /* Duplicado */
-        transition: all 200ms ease-out;
-    }
-    
-    .checkbox:hover {
-        background-color: #c9cbcd;
-        transition-duration: 0s;
-    }
-    
-    .checkbox:checked {
-        background-color: #6e79d6;
-    }
-    
-    .checkbox:checked::after {
-        left: 1.36vw; /* Duplicado */
-    }
-    
-    .checkbox:checked:hover {
-        background-color: #535db3;
+    .icon {
+        width: 3vw;
+        height: 3vw;
     }
 }
