@@ -4,6 +4,8 @@ import React from "react";
 import Swal from "sweetalert2";
 import ExtendedPreview from "./ExtendedPreview";
 
+//Component that contains the preview mobile button.
+
 function PreviewMobile({ firstColor, secondColor }) {
   const showSwal = () => {
     const MySwal = withReactContent(Swal);

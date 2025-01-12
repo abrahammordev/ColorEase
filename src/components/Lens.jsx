@@ -5,6 +5,8 @@ import withReactContent from "sweetalert2-react-content";
 import ExtendedPreview from "./ExtendedPreview";
 import style from "./styles.module/Lens.module.css";
 
+//Component for the lens icon that opens the Extendedpreview component in a SweetAlert.
+
 function Lens({ firstColor, secondColor }) {
   const [isChecked, setIsChecked] = useState(false);
 
@@ -32,20 +34,20 @@ function Lens({ firstColor, secondColor }) {
       ),
       showCloseButton: true,
       showCancelButton: false,
-      showConfirmButton: false, // Sin botones adicionales
+      showConfirmButton: false,
       customClass: {
         popup: "swal2-preview-modal",
       },
       didRender: () => {
         const popup = Swal.getPopup();
         if (popup) {
-          popup.style.width = "70vw"; // Ajustamos para que ocupe casi todo el ancho
+          popup.style.width = "70vw";
           popup.style.maxWidth = "none";
-          popup.style.height = "80vw"; // Altura ampliada
-          popup.style.backgroundColor = "var(--window-color)"; // Fondo del popup lesgo
+          popup.style.height = "80vw";
+          popup.style.backgroundColor = "var(--window-color)"; 
           
           
-          popup.style.padding = "0"; // Eliminamos el padding para un uso óptimo del espacio
+          popup.style.padding = "0";
           popup.style.overflow = "hidden";
         }
       },

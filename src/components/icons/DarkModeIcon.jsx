@@ -2,7 +2,7 @@ import { useTheme } from '../../context/ThemeContext';
 import styles from './styles.module/DarkModeIcon.module.css';
 
 function DarkModeIcon() {
-  const { theme, toggleTheme } = useTheme(); // Acceder al tema y la función para cambiarlo
+  const { theme, toggleTheme } = useTheme(); 
 
   return (
     <div className={styles.checkboxWrapper}>
@@ -10,7 +10,7 @@ function DarkModeIcon() {
         type="checkbox"
         className={styles.checkbox}
         checked={theme === 'dark'}
-        onChange={toggleTheme} // Cambiar tema al hacer clic
+        onChange={toggleTheme} 
       />
       <label className={styles.label}>
         <div className={styles.iconWrapper}>

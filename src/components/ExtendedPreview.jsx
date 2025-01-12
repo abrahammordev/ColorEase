@@ -2,6 +2,8 @@ import styles from "./styles.module/ExtendedPreview.module.css";
 import React, { useState } from "react";
 import SwitchColorsButton from "./SwitchColorsButton";
 
+//Variation of the preview component, with less elements for SweetAlerts.
+
 function ExtendedPreview({ firstColor, secondColor }) {
   const [isChecked, setIsChecked] = useState(false);
   
@@ -97,7 +99,7 @@ function ExtendedPreview({ firstColor, secondColor }) {
         Yes
       </label>
 
-      {/* Botón "No" */}
+      {}
       <label
         style={{
           display: "flex",
