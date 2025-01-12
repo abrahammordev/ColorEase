@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import SwitchColorsButton from "./SwitchColorsButton";
 import Lens from "./Lens";
 
+//Preview component that shows the selected colors and the HEX code.
+
 function Preview({ firstColor, secondColor }) {
   const [isChecked, setIsChecked] = useState(false);
 
@@ -99,7 +101,7 @@ function Preview({ firstColor, secondColor }) {
         Yes
       </label>
 
-      {/* Botón "No" */}
+      {}
       <label
         style={{
           display: "flex",

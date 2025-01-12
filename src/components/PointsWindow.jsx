@@ -1,6 +1,8 @@
 import Points from "./Points";
 import styles from "./styles.module/PointsWindow.module.css"
 
+//Component that contains the Points component.
+
 function PointsWindow({ firstColor, secondColor}){
     return(
         <div className={styles.PointsWindow}>

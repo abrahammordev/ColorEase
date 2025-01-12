@@ -1,8 +1,4 @@
-/*Para medir el nivel de accesibilidad entre dos colores usamos la relación de contraste
-Esta está definida de 1:1 (ningún contraste) a 21:1 (mayor contraste, de blanco a negro)
-*/
-
-//Función para convertir HEX a RGB
+//algorithm to check the contrast ratio between two colors
 
 function hexToRGB(hexColor) {
   hexColor = hexColor.replace("#", "");
@@ -14,7 +10,7 @@ function hexToRGB(hexColor) {
   return [r, g, b];
 }
 
-//Función para calcular el componente de luminancia
+
 
 function luminanceComponent(c) {
   c = c / 255;
@@ -25,7 +21,7 @@ function luminanceComponent(c) {
   }
 }
 
-//Función para calcular la luminancia relativa del color
+
 
 function relativeLuminance([r, g, b]) {
   return (
@@ -35,7 +31,7 @@ function relativeLuminance([r, g, b]) {
   );
 }
 
-//Función para calcular la correlación de contraste entre dos colores y devuelve una puntuacion de 0 a 100
+
 
 export function contrastRatio(color1, color2) {
   let lum1 = relativeLuminance(hexToRGB(color1));

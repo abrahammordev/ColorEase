@@ -2,12 +2,14 @@ import { useRef, useState, useEffect } from "react";
 import styles from "./styles.module/ColorChoice.module.css";
 import colorCircle from "../images/color-circle-icon.png";
 
+//Component for color picker where user can choose color by entering hex code or using color picker.
+
 function ColorChoice({ id, value = "#000000", onColorChange = () => {} }) {
   const colorInputRef = useRef(null);
   const textInputRef = useRef(null);
   const [textValue, setTextValue] = useState(value);
 
-  // Actualiza el texto si el padre cambia `value`
+  
   useEffect(() => {
     setTextValue(value);
     if (colorInputRef.current) {
@@ -28,12 +30,12 @@ function ColorChoice({ id, value = "#000000", onColorChange = () => {} }) {
     if (value.length > 7) {
       value = value.substring(0, 7);
     }
-    // Nos aseguramos de que el valor siempre comience con #
+    
     if (!value.startsWith("#")) {
       value = "#" + value;
     }
     setTextValue(value);
-    // Solo actualizamos el colorInputRef y llamamos a onColorChange si la longitud es 7
+    
     if (value.length === 7) {
       colorInputRef.current.value = value;
       onColorChange(value);

@@ -2,20 +2,21 @@ import styles from "./styles.module/Points.module.css";
 import { contrastRatio } from "../scripts/colorChecker";
 import React, { useState, useEffect } from "react";
 
+//Component that shows the contrast ratio between two colors and if it meets the WCAG standards.
 
 function Points({ firstColor, secondColor }) {
   const contrast = contrastRatio(firstColor, secondColor);
   const percentage = contrast;
   const isMobile = window.innerWidth <= 700;
 
-  // Accesibility levels according to WCAG standards
+
   const levels = [
     { label: "AA (larger text)", threshold: Math.floor((3 / 21) * 100) },
     { label: "AA (normal text)", threshold: Math.floor((4.5 / 21) * 100) },
     { label: "AAA (normal text)", threshold: Math.floor((7 / 21) * 100) },
   ];
 
-  // Determine the contrast level
+
 
   let contrastLevel = "⚠️ Below WCAG standards";
   if (percentage >= levels[2].threshold) {
@@ -25,7 +26,7 @@ function Points({ firstColor, secondColor }) {
   } else if (percentage >= levels[0].threshold) {
     contrastLevel = "🔧 AA - Functional!";
   }
-//------------------------------------------------------------
+
 
 const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -36,20 +37,20 @@ const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-//------------------------------------------------------------
+
 
 
   const marginLeft = (() => {
     if (contrast >= 0 && contrast <= 9) {
-      if (windowWidth > 700 && windowWidth <= 1200) return "10vw"; // Resolución intermedia
-      if (windowWidth > 1200) return "6vw"; // Pantallas grandes
+      if (windowWidth > 700 && windowWidth <= 1200) return "10vw"; 
+      if (windowWidth > 1200) return "6vw"; 
     }
     if (contrast === 100) {
-      if (windowWidth > 700 && windowWidth <= 1200) return "6.7vw"; // Resolución intermedia
-      if (windowWidth > 1200) return "3.5vw"; // Pantallas grandes
+      if (windowWidth > 700 && windowWidth <= 1200) return "6.7vw"; 
+      if (windowWidth > 1200) return "3.5vw"; 
     }
-    return ""; // Por defecto, no aplica margen
-  })(); //solucion del bug de la posicion de los points
+    return ""; 
+  })(); 
 
   return (
     <div className={styles.Points}>

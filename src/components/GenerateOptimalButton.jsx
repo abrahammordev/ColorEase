@@ -1,5 +1,7 @@
 import style from "./styles.module/GenerateOptimalButton.module.css";
 
+//Component for button that generates a optimal color combination.
+
 function GenerateOptimalButton({ onClick }) {
   return (
     <svg

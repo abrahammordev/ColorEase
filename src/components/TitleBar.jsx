@@ -1,5 +1,7 @@
 import styles from "./styles.module/TitleBar.module.css";
 
+//Title bar component with the title of the app.
+
 function TitleBar() {
   return (
     <div className={styles.TitleBar}>

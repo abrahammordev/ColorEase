@@ -7,6 +7,8 @@ import BuyMeACoffee from "./icons/BuyMeACoffee.jsx";
 import { contrastRatio } from "../scripts/colorChecker";
 import GenerateOptimalButton from "./GenerateOptimalButton";
 
+//Window where user can choose colors and generate optimal color combination, here are 2 ColorPicker components. 
+
 function ColorChoiceWindow({
   onColorsUpdate = () => {},
   initialColors = { firstColor: "#ffffff" ,
@@ -31,7 +33,7 @@ function ColorChoiceWindow({
       setSecondColor(colorValue);
       onColorsUpdate({ secondColor: colorValue });
     }
-    // Actualizamos los colores en el padre
+
   };
 
   return (
@@ -55,11 +57,11 @@ function ColorChoiceWindow({
       <div className={styles["random-colors"]}>
         <GenerateOptimalButton
           onClick={() => {
-            const [color1, color2] = generateOptimalcombination(); // Llama a la función y desestructura los colores
-            setFirstColor(color1); // Actualiza el estado de `firstColor`
-            setSecondColor(color2); // Actualiza el estado de `secondColor`
+            const [color1, color2] = generateOptimalcombination(); 
+            setFirstColor(color1); 
+            setSecondColor(color2); 
 
-            // Notifica al componente padre sobre los nuevos colores
+            
             onColorsUpdate({ firstColor: color1, secondColor: color2 });
           }}
         />

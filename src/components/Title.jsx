@@ -1,5 +1,7 @@
 import styles from "./styles.module/Title.module.css";
 
+//Title component that contains the title of the app.
+
 function Title() {
   return (
     <div className={styles.Title}>

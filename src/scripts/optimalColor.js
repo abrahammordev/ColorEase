@@ -1,5 +1,7 @@
 import { contrastRatio } from "./colorChecker.js";
 
+//algorithm to generate the optimal color combination
+
 function generateOptimalcombination() {
   let optimalUmbral = 50;
   let bestFirstColor = generateRandomColor();
