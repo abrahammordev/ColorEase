@@ -7,10 +7,8 @@ import style from "./styles.module/Lens.module.css";
 //Component for the lens icon that opens the Extendedpreview component in a SweetAlert.
 
 function Lens({ firstColor, secondColor }) {
-  const [isChecked, setIsChecked] = useState(false);
-
-  const currentFirstColor = firstColor 
-  const currentSecondColor = secondColor
+  const currentFirstColor = firstColor;
+  const currentSecondColor = secondColor;
 
   const showSwal = () => {
     const MySwal = withReactContent(Swal);

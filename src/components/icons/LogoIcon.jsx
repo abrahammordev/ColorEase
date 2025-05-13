@@ -4,7 +4,7 @@ import mainIcon from "../../images/main-icon.webp";
 function LogoIcon() {
   return (
     <div>
-      <img src={mainIcon} className={styles.LogoIcon}/>
+      <img src={mainIcon} className={styles.LogoIcon} alt="ColorEase Logo"/>
     </div>
   );
 }

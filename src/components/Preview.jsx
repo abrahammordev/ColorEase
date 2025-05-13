@@ -134,7 +134,7 @@ function Preview({ firstColor, secondColor }) {
           style={{ border: `2px solid ${currentSecondColor}` }}
         >
           <a
-            href="#"
+            href="#!"
             className={styles.button}
             style={{ color: `${currentSecondColor}` }}
           >

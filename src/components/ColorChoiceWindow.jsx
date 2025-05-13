@@ -16,12 +16,7 @@ function ColorChoiceWindow({
 }) {
   const [firstColor, setFirstColor] = useState(initialColors.firstColor);
   const [secondColor, setSecondColor] = useState(initialColors.secondColor);
-  const [contrast, setContrast] = useState(
-    contrastRatio(firstColor, secondColor)
-  );
-
   useEffect(() => {
-    setContrast(contrastRatio(firstColor, secondColor));
     onColorsUpdate({ firstColor, secondColor });
   }, [firstColor, secondColor, onColorsUpdate]);
 

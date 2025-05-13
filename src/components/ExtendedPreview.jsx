@@ -10,10 +10,6 @@ function ExtendedPreview({ firstColor, secondColor }) {
     const currentFirstColor = isChecked ? secondColor : firstColor;
     const currentSecondColor = isChecked ? firstColor : secondColor;
   
-    const handleCheckboxChange = (event) => {
-      setIsChecked(event.target.checked);
-    };
-  
     const [selectedValue, setSelectedValue] = useState(null);
   
     const handleChange = (value) => {
@@ -131,7 +127,7 @@ function ExtendedPreview({ firstColor, secondColor }) {
           style={{ border: `2px solid ${currentSecondColor}` }}
         >
           <a
-            href="#"
+            href="#!"
             className={styles.button}
             style={{ color: `${currentSecondColor}` }}
           >

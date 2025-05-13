@@ -46,7 +46,7 @@ function TitleBar() {
             d="M281.326 100h-30.505l10.107-47.79h30.542l-.915 4.284h-25.489l-3.662 17.102h18.824l-.916 4.285h-18.823l-3.736 17.834h25.489zm10.51-9.228q.66-3.223 2.71-5.384 2.088-2.197 4.981-3.442 2.893-1.282 6.409-1.831a42.7 42.7 0 0 1 7.031-.586q1.355 0 2.417.036a48 48 0 0 1 3.918.293q.952.111 2.161.257l.513-2.454q.55-2.49-.22-4.101-.732-1.612-2.124-2.527a8.7 8.7 0 0 0-3.04-1.319q-1.647-.403-2.856-.403-3.846 0-7.251 1.026a34 34 0 0 0-6.555 2.746l-1.502-3.772q3.516-1.867 7.617-3.039 4.102-1.209 8.68-1.209 2.746 0 5.31.733 2.563.696 4.358 2.197 1.794 1.465 2.526 3.882.77 2.417.074 5.786L322.269 100h-5.018l1.209-5.713a24 24 0 0 1-3.662 2.893 23 23 0 0 1-3.882 2.051 24.3 24.3 0 0 1-3.955 1.172q-1.94.44-3.589.439-6.738 0-9.668-2.6t-1.868-7.47m12.452 5.786q3.149 0 5.859-.916 2.747-.952 4.761-2.344 2.05-1.39 3.369-2.966 1.319-1.575 1.611-2.856l.659-3.223a34 34 0 0 0-4.651-.403 241 241 0 0 0-3.881-.036q-2.71 0-5.31.366-2.563.366-4.615 1.208-2.013.806-3.442 2.124-1.428 1.32-1.794 3.26-.513 2.16 1.208 3.991 1.721 1.795 6.226 1.795m61.779-6.006q-.586 3.003-2.526 4.98-1.905 1.978-4.541 3.15-2.601 1.17-5.64 1.648a35 35 0 0 1-5.823.512 29.8 29.8 0 0 1-8.972-1.355q-4.285-1.355-7.214-3.552l3.149-4.321q3.296 2.38 6.665 3.662 3.369 1.281 7.288 1.282 11.316 0 12.597-5.86.294-1.427-.476-2.307-.732-.916-2.197-1.465-1.465-.585-3.406-.915-1.94-.33-4.138-.623-2.746-.403-5.457-.952-2.709-.55-4.797-1.648t-3.113-2.93q-1.025-1.83-.403-4.834.587-2.564 2.271-4.43 1.684-1.868 4.102-3.113 2.453-1.245 5.529-1.832a33 33 0 0 1 6.226-.585q4.504 0 7.837 1.062 3.333 1.025 5.749 2.966l-2.856 3.918q-2.454-2.051-5.31-2.856-2.856-.843-6.372-.843-1.575 0-3.552.293-1.942.257-3.736.953-1.794.66-3.149 1.757-1.356 1.063-1.721 2.71-.293 1.43.439 2.308.77.842 2.197 1.428 1.465.549 3.406.879 1.977.33 4.138.622 2.71.403 5.457.952 2.746.55 4.834 1.612t3.149 2.893q1.062 1.83.366 4.834m14.026-5.86q-.586 5.421 2.088 8.643 2.71 3.222 8.203 3.223 3.808 0 7.141-1.575t5.383-3.919l2.967 2.417q-3.297 3.59-7.288 5.494-3.955 1.867-9.119 1.867-3.991 0-6.994-1.318-2.967-1.319-4.908-3.662-1.904-2.38-2.526-5.64-.66-3.26.256-7.25.805-3.884 2.673-7.142 1.905-3.296 4.651-5.676a20.5 20.5 0 0 1 6.299-3.736q3.553-1.355 7.507-1.355 4.359 0 7.288 1.465t4.578 4.065q1.647 2.564 1.904 6.153t-.623 7.946zm25.049-4.284q.366-5.604-2.307-8.35-2.637-2.746-7.361-2.747-2.417.001-4.651.806a14.1 14.1 0 0 0-4.065 2.234q-1.867 1.465-3.369 3.552a16 16 0 0 0-2.307 4.505z"
             fill="currentColor"
             stroke="currentColor"
-            stroke-width="2"
+            strokeWidth="2"
           />
         </g>
         <circle cx="76" cy="39" r="14" fill="url(#e)" />
@@ -54,18 +54,18 @@ function TitleBar() {
         <path
           d="m79.234 34.1 8.036 13.419M72.766 34.1h16.072m-19.306 5.4 8.036-13.419M72.766 44.9 64.73 31.481M79.234 44.9H63.162m19.306-5.4-8.036 13.419M90 39.5C90 46.956 83.732 53 76 53s-14-6.044-14-13.5S68.268 26 76 26s14 6.044 14 13.5"
           stroke="#000"
-          stroke-width="4"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <circle cx="174.5" cy="39.5" r="14.5" fill="url(#g)" />
         <circle cx="174.5" cy="39.5" r="14.5" fill="url(#h)" />
         <path
           d="m177.85 33.7 8.322 14.413M171.15 33.7h16.647m-19.996 5.8 8.323-14.413M171.15 45.3l-8.322-14.413M177.85 45.3h-16.647m19.996-5.8-8.323 14.413M189 39.5c0 8.008-6.492 14.5-14.5 14.5S160 47.508 160 39.5 166.492 25 174.5 25 189 31.492 189 39.5"
           stroke="#000"
-          stroke-width="4"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <defs>
           <radialGradient
@@ -76,15 +76,15 @@ function TitleBar() {
             gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(0 -14 14 0 76 39)"
           >
-            <stop stop-color="#E7E00" />
-            <stop offset=".124" stop-color="#EEAA3C" />
-            <stop offset=".249" stop-color="#E8403B" />
-            <stop offset=".366" stop-color="#B33ED5" />
-            <stop offset=".506" stop-color="#694AE8" />
-            <stop offset=".643" stop-color="#3CCAE7" />
-            <stop offset=".749" stop-color="#3CE885" />
-            <stop offset=".87" stop-color="#89E743" />
-            <stop offset="1" stop-color="#E7E040" />
+            <stop stopColor="#E7E00" />
+            <stop offset=".124" stopColor="#EEAA3C" />
+            <stop offset=".249" stopColor="#E8403B" />
+            <stop offset=".366" stopColor="#B33ED5" />
+            <stop offset=".506" stopColor="#694AE8" />
+            <stop offset=".643" stopColor="#3CCAE7" />
+            <stop offset=".749" stopColor="#3CE885" />
+            <stop offset=".87" stopColor="#89E743" />
+            <stop offset="1" stopColor="#E7E040" />
           </radialGradient>
           <radialGradient
             id="f"
@@ -94,8 +94,8 @@ function TitleBar() {
             gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(0 14 -14 0 76 39)"
           >
-            <stop stop-color="#E4E4E4" />
-            <stop offset=".88" stop-color="#E4E4E4" stop-opacity="0" />
+            <stop stopColor="#E4E4E4" />
+            <stop offset=".88" stopColor="#E4E4E4" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="g"
@@ -105,15 +105,15 @@ function TitleBar() {
             gradientUnits="userSpaceOnUse"
             gradientTransform="rotate(-90 107 -67.5)scale(14.5)"
           >
-            <stop stop-color="#E7E040" />
-            <stop offset=".124" stop-color="#EEAA3C" />
-            <stop offset=".249" stop-color="#E8403B" />
-            <stop offset=".366" stop-color="#B33ED5" />
-            <stop offset=".506" stop-color="#694AE8" />
-            <stop offset=".643" stop-color="#3CCAE7" />
-            <stop offset=".749" stop-color="#3CE885" />
-            <stop offset=".87" stop-color="#89E743" />
-            <stop offset="1" stop-color="#E7E040" />
+            <stop stopColor="#E7E040" />
+            <stop offset=".124" stopColor="#EEAA3C" />
+            <stop offset=".249" stopColor="#E8403B" />
+            <stop offset=".366" stopColor="#B33ED5" />
+            <stop offset=".506" stopColor="#694AE8" />
+            <stop offset=".643" stopColor="#3CCAE7" />
+            <stop offset=".749" stopColor="#3CE885" />
+            <stop offset=".87" stopColor="#89E743" />
+            <stop offset="1" stopColor="#E7E040" />
           </radialGradient>
           <radialGradient
             id="h"
@@ -123,8 +123,8 @@ function TitleBar() {
             gradientUnits="userSpaceOnUse"
             gradientTransform="rotate(90 67.5 107)scale(14.5)"
           >
-            <stop stop-color="#E4E4E4" />
-            <stop offset=".88" stop-color="#E4E4E4" stop-opacity="0" />
+            <stop stopColor="#E4E4E4" />
+            <stop offset=".88" stopColor="#E4E4E4" stopOpacity="0" />
           </radialGradient>
           <filter
             id="a"
@@ -133,9 +133,9 @@ function TitleBar() {
             width="251.034"
             height="69.326"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
@@ -159,9 +159,9 @@ function TitleBar() {
             width="169.667"
             height="58.633"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
